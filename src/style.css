@@ -66,13 +66,16 @@ img{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-h1, h2{
+h1, h2, h3, h4{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2vw;
+    color: white;
 }
 
 p{
     font-size: 1.5vw;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 hr{
@@ -147,3 +150,76 @@ hr{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1vw;
 }
+
+.section-conductor{
+    display: flex;
+    background: url(../labcar/img/conduce.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    justify-content: flex-end;
+    width: 100vw;
+    height: 60vh;
+}
+
+.conductor-text{
+    display: flex;
+    box-sizing: border-box;
+    padding: 3%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background: rgb(35,35,36, 0.3);
+    width: 30%;
+    height: 100%;
+    font-size: 1.2vw;
+}
+
+.button-conductor{
+    width: 70%;
+    height: 10%;
+    font-size: 1.2vw;
+    border-radius: 5px;
+    border: none;
+    background: #f7b617;
+    color: white;
+}
+
+.section-tarifa{
+    box-sizing: border-box;
+    display: flex;
+    width: 100vw;
+    height: 60vh;
+    background: #f7b617;
+    justify-content: space-around;
+    align-items: center ;
+}
+
+.tarifas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 40%;
+    height: 90%;
+}
+
+.show-map{
+    display: flex;
+    width: 40%;
+    height: 90%;
+    border: solid white 1px;
+}
+
+.button-ruta{
+    width: 50%;
+    height: 10%;
+    font-size: 1.2vw;
+    border-radius: 2px;
+    background: white;
+    border: none;
+    align-self: center;
+}
+
+
+
