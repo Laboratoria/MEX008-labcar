@@ -12,7 +12,7 @@
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
-  speak: none;
+  /* speak: none; */
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -38,4 +38,39 @@
 }
 .icon-linkedin2:before {
   content: "\eaca";
+}
+
+/*primero en el móvil (mobile first)*/
+nav {
+  padding: 1em;
+  font-family: Verdana, Geneva, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #000;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: #fff;
+}
+nav li a {
+  color: #000;
+  display: block;
+  text-decoration: none;
+  padding: .5em 1em;
+}
+nav li a:hover {
+  background: #F7B73A;
+  color: white;
+}
+#logo a:hover{
+  background: #fff;
+}
+
+/* mobile */
+@media screen and (min-width: 480px) {
+  nav ul {
+    display: flex;
+  }
 }
