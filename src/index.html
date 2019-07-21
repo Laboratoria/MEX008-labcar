@@ -8,27 +8,34 @@
         <title>Lab&lt;ar</title>
 
         <link rel="shortcut icon" type="image/x-icon" href="../labcar/img/icon.ico" />
+        <link rel="stylesheet" media="(max-width: 768px)" href="media-query.css"/>
         <link rel="stylesheet" href="style.css" />
-
+        <link rel="stylesheet" href="style-font.css"/>
     </head>
 
         <body>
-            <header>
-                <div>
-                    <div class = "navbar">
-                      <img clas= "img-nav" src = "../labcar/img/logo.png">
-                      <ul>
-                        <li>Viaja</li>
-                        <li>Conduce</li>
-                        <li>Inicia sesión</li>
-                      </ul>              
-                    </div>
+            <header class="header">
+                <div class="main-hamburger">
+                        <div class="layer-top"></div>
+                        <div class="layer-mid"></div>
+                        <div class="layer-bottom"></div>
                 </div>
+                <div class="logo">
+                    <img clas= "img-nav" src = "../labcar/img/logo.png">
+                </div>
+                <nav class="menu-app" id="menu-app">                      
+                    <ul>
+                        <li><a href="#">Viaja</a></li>
+                        <li><a href="#">Conduce</a></li>
+                        <li><a href="#">Inicia sesión</a></li>
+                    </ul>              
+                </nav>
             </header>
 
-            <section class="hero">
-                <div class= "hero-text">
-                    <h1>Disfruta del viaje <section>
+            <section class="hero" id="hero">
+                <div class= "hero-text" id="hero-text">
+                    <h1>Disfruta del viaje 
+                        <br>
                         Eres dueño de tu tiempo</h1>
                     <p>Viaja con <img src= "../labcar/img/logo-blanco.png"/></p>
                     <input type="button" class="registro" value="REGÍSTRATE"/>
@@ -37,65 +44,94 @@
                     </div>
                     <input type="button" class="conductor" value="Conviértete en un conductor"/>
                 </div>
+                <div class="hero-mobile" id="hero-mobile">
+                        <p id="paragraph">Comienza a viajar con <img id="img" src= "../labcar/img/logo-blanco.png"/></p>
+                        <input type="button" class="reg-mobile" id="reg-mobile" value="Descarga la app"/>
+                </div>
+                
             </section>
 
-            <section class="information">   
-                <div class="information-container">
-                    <div class="information-img">
-                        <img src="../labcar/img/celular.png"></img>    
+            <section class="information" id="information">   
+                <div class="information-container" id="information-container">
+                    <div class="information-img" id="information-img">
+                        <h2 id="h2-inf">La nueva app</h2>
+                        <img class="image-inf" id="image-inf" src="../labcar/img/celular.png"></img>    
                     </div>
-                    <div class="information-text">
-                        <h2>Descarga la nueva app</h2> 
+                    <div class="information-text" id="information-text">
+                        <h3 class="h3">Descarga la nueva app</h3> 
                         <br>
                         <br>
-                        <p>La versión actualizada de LabCar está lleno de nuevas funciones
+                        <p class="pharagraph-inf-a">La versión actualizada de LabCar está lleno de nuevas funciones
                            para llegar a donde quieras aún más fácil y rápido. <br><br> 
                            Con solo tocar un botón, un auto llega justo a tu ubicación. Súbete
                            y no te preocupes: tu conductor sabe exactamente a donde ir.     
                         </p>
                     </div>
-                </div>       
+                </div>    
+                <div class="texto" id="texto">
+                    <p class="pharagraph-inf-b">Llega a tu destino aún más rápido</p>
+                </div>   
             </section>
 
-            <section class="section-conductor">
-                <div class="conductor-text">
-                    <h3>Conduce cuando quieras</h3>
+          <section class="section-conductor" id="section-conductor">
+                <div class="conductor-text" id="conductor-text">
+                    <h4 class="h4" >Conduce cuando quieras</h4>
                     <br>
-                    <p>LabCar es una opción flexible para alcanzar tus metas financieras</p>
+                    <p class="pharagraph-conductor">LabCar es una opción flexible para alcanzar tus metas financieras</p>
                     <br>
-                    <input type="button" class="button-conductor" value="Conviértete en un conductor">
+                    <input type="button" class="button-conductor" id="button-conductor" value="Conviértete en un conductor">
                 </div>
             </section>
 
-            <section class="section-tarifa">
-                <div class="tarifas">
-                    <h4>Tarifas</h4>
-                    <br>
-                    <p>Consulta las tarifas LabCar aquí</p>
-                    <br>
-                    <input type="text" class="input-direccion" id="direccion" placeholder="Ingrese su punto de partida">
-                    <br>
-                    <input type="text" class="input-destino" id="destino" placeholder="Ingrese su destino">
-                    <br>
-                    <input type="button" class="button-ruta" id="button-ruta" value="¡TRAZAR RUTA!">
+            <section class="section-tarifa" id="section-tarifa">
+                <div class="tarifas" id="tarifas"> 
+                    <div class="tarifa-text" id="tarifa-text">
+                        <h5 id="h5">Tarifas</h5>
+                        <br>
+                        <br>
+                        <p id="pharagraph-tarifa">Consulta las tarifas LabCar aquí</p>
+                    </div>  
+                    <div class="div-direction" id="div-direction">
+                        <div class="img-d" id="img-d">
+                            <img class = "img-icon" src="../labcar/img/circulo.png">
+                        </div>
+                        <div class ="in-direction">                       
+                            <input type="text" class="input-direccion" id="direccion" placeholder="Ingrese su punto de partida">
+                        </div>
+                    </div> 
+                    <div class="div-destino" id="div-destino">
+                        <div class="img-d" id="img-d">
+                            <img class = "img-icon" src="../labcar/img/flecha.png">
+                        </div>
+                        <div class ="in-destino">                        
+                            <input type="text" class="input-destino" id="destino" placeholder="Ingrese su destino">
+                        </div> 
+                    </div>  
+                    <div class="button-tarifa"  id="button-tarifa" >
+                        <input type="button" class="button-ruta" id="button-ruta" value="¡TRAZAR RUTA!">
+                    </div>       
                 </div>
                 <div class="show-map" id = "show-map">                    
                 </div>
             </section>
 
-            <footer class="foot">
+             <!-- <footer class="foot">
                 <div class="foot-logo">
                     <img src="../labcar/img/logo-blanco.png">
                 </div>
                 <div class="foot-line">
-                    <hr/>
+                    <hr class = "line-f"/>
                 </div>
                 <div class="foot-column">
                     <div class="icon-foot">
-
+                        <span class="icon-facebook"></span>
+                        <span class="icon-twitter"></span>
+                        <span class="icon-linkedin2"></span>
+                        <span class="icon-appleinc"></span>
+                        <span class="icon-play3"></span>
                     </div>
                     <div class="column-one">
-                        <ul>
+                        <ul id= "columnO">
                             <li>Viaja</li>
                             <li>Conduce</li>
                             <li>Ciudades</li>
@@ -107,7 +143,7 @@
                         </ul>
                     </div>
                     <div class="column-two">
-                            <ul>
+                            <ul id="columnT">
                                 <li>Oportunidades</li>
                                 <li>Nuestra Historia</li>
                                 <li>API de LabCar</li>
@@ -124,15 +160,14 @@
                     </div>
                 </div>
                 <div class="foot-line">
-                    <hr/>
-                </div class="foot-right">
-                <div>
+                    <hr class="line-f" id="line-a"/>
+                </div>
+                <div class="foot-right">
                     <p>&copy;2017LabCar technologies Inc.</p>
                 </div>
-            </footer>
+            </footer> --> 
             
             <script src="http://www.google.com/jsapi?key=AIzaSyC1C0tMPiLP653UBp7v6zlO27VYGodmpSI"></script>
             <script src="main.js"></script>
         </body>
-    </html>
-  
+    </html>  
