@@ -334,7 +334,6 @@
         flex-direction: column;
         width: 100vw;
         height: 100vh;
-        border: solid green 2px;
     }
 
     #tarifas{
@@ -342,22 +341,86 @@
         display: flex;
         width: 100%;
         height: 50%;
-        border: solid green 2px;
+    }
+
+    #tarifa-text{
+        box-sizing: border-box;
+        padding: 0% 2% 0% 2%;
+        display: flex;
+        width: 100%;
+        height: 25%;
     }
 
     #show-map{
         box-sizing: border-box;
         display: flex;
-        width: 100%;
-        height: 50%
-        border: solid green 2px;
+        width: 80%;
+        height: 40%;
+        border: solid white 2px;
     }
 
     #h5{
-        font-size: 4vw;
+        font-size: 7vw;
     }
 
     #pharagraph-tarifa{
+        font-size: 5vw;
+    }
+
+    #button-ruta, #direccion, #destino{
+        font-size: 5vw;
+    }
+
+    /* Seccion Footer */
+    #column-two{
+        display: none;
+        visibility: collapse;
+    }
+
+    #column-one{
+        display: flex;
+        order:-1;
+        width: 50%;
+        height: 100%;
+    }
+
+    #column-one ul li{
+        font-size: 2vw;       
+    }
+
+    #icon-foot{
+        box-sizing: border-box;
+        display: flex;
+        position: relative;
+        left: 25%;
+        width: 50%;
+        height: 30%;
+        align-items: flex-start;
+        align-self: flex-start;
+        padding: padding: 2% 0% 2% 0;        
+    }
+
+    #icon-foot span{
+        font-size: 4vw;
+    }
+
+    #app-store{
+        box-sizing: border-box;
+        display: flex;
+        width: 50%;
+        height: 50%;
+        position: relative;
+        bottom: 30%;
+        right: 9%;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    #foot-right{
+        display: flex;
+        justify-content: flex-start;
+    }
+    #foot-right p{
         font-size: 3vw;
     }
 }
