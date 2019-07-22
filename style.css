@@ -334,6 +334,9 @@ body {
 .root .app-desktop h4{
   display: none;
 }
+.root .side-box, .header{
+  display: none;
+}
 }
 
 @media only screen and (max-width: 600px) { /* estilos mobile */
