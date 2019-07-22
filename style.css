@@ -1,0 +1,635 @@
+
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Gothic A1', sans-serif;
+}
+
+@media (min-width: 320px) and (max-width: 480px){
+.contenedor{
+    display: grid;
+    grid-template-columns: 5% repeat(5,auto);
+    grid-template-rows: repeat(6,auto);
+    grid-template-areas: 
+    "nav-bar nav-bar nav-bar nav-bar nav-bar nav-bar"
+    "hero hero hero hero hero hero"
+    "informacion informacion informacion informacion informacion informacion"
+    "conductor conductor conductor conductor conductor conductor"
+    "tarifas tarifas tarifas tarifas tarifas tarifas"
+    "footer footer footer footer footer footer";
+}
+.contenedor .informacion1{
+    display: none;
+}
+.contenedor .caja-lateral1{
+    display: none;
+}
+.contenedor .tarifas .mapa img#mapa2{
+    display: none;
+}
+/* .contenedor .formulario{
+    display: none;
+}*/
+
+/* HEADER PEQUE */
+.contenedor .header{
+    grid-area: nav-bar;
+    background-color: #f5f107;
+    display:block;
+    justify-content: start;
+    margin-bottom: 25px;
+    background: #f7df02;
+}
+.contenedor .header img{
+    width: 163px;
+    height: 47px;
+    margin-left: 30px;
+}
+.contenedor .header button i{
+  font-size: 20px;
+  cursor: pointer;
+  color:rgb(241, 235, 177);
+  background: rgba(70, 70, 65, 0.9);
+  transition: all 0.5s;
+  transform: translateX(0%);
+  justify-content: right;
+  align-content: flex-end;
+}
+.contenedor .header button i{
+    display: block;
+    color: white;
+    height: 22px;
+    text-decoration: none;
+   justify-content: right; 
+   align-content: flex-end;
+}
+
+.contenedor .header p{
+    margin: 5px 10px;
+}
+
+/* HERO PEQUE */
+.contenedor .hero{
+    grid-area: hero;
+    background: url(../MEX008-labcar/labcar/img/taxi.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    width: 320px;
+    display: grid; 
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 25% 25% 25% 25%;
+                          
+}
+.contenedor .hero .caja-lateral{
+    display: block;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start:2;
+    grid-row-end: 4;
+    background: #f3f02a;
+    padding: 75px 25px;
+}
+.contenedor .hero .caja-lateral p{
+    color: white;
+    font-size: 16pt;
+    margin-bottom: 5px;
+}
+.contenedor .hero .caja-lateral button{
+    color: black;
+    font-size: 11pt;
+    background: whitesmoke;
+    height: 5vh;
+    width: 40vw;
+    border-radius: 6px;
+    border: none;
+}
+
+/* INFORMACION PEQUE */
+.contenedor .informacion{
+    grid-area: informacion;
+    background-color: #f3f02a;
+    color: white;
+}
+.contenedor .informacion .imagen{
+    border: solid white;
+    border-width: 1px;
+    margin: 30px 10px;
+    padding: 40px;
+    top:0;
+}
+.contenedor .informacion .imagen h3{
+    margin-bottom: 15px;
+}
+.contenedor .informacion img{
+    height: 290px;
+    width: 218px;
+}
+
+/* CONDUCTOR PEQUE */
+.contenedor .conductor{
+    grid-area: conductor;
+    background: url(../MEX008-labcar/labcar/img/conduce.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+    width: 320px;
+    color: white;
+}
+.contenedor .conductor .conduce{
+    padding: 116px 20px 10px;
+}
+.contenedor .conductor .conduce button{
+    color: white;
+    background:  #f3f02a;
+    border: none;
+    border-radius: 6px;
+    height: 40px;
+    width: 184px;
+    font-size: 10pt;
+    font-weight: bold;
+}
+.contenedor .conductor .conduce p{
+    font-size: 2.5vh;
+}
+.contenedor .conductor .conduce h3,
+.contenedor .conductor .conduce p,
+.contenedor .conductor .conduce button{
+    margin-bottom: 10px;
+}
+
+/* TARIFAS PEQUE */
+.contenedor .tarifas{
+    grid-area: tarifas;
+    background-color:  #f3f02a;
+    height: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    color: white;
+    padding: 10px;
+}
+.contenedor .tarifas .direcciones p input{
+    background:  #f3f02a;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    border-radius: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    width: 75vw;
+    height: 4vh;
+}
+.contenedor .tarifas .direcciones p img{
+    width: 10px;
+}
+.contenedor .tarifas .direcciones p{
+    text-align: center;
+    
+}
+.contenedor .tarifas .direcciones p button{
+    background-color: whitesmoke;
+    border: none;
+    height: 4vh;
+    width: 20vh;
+    font-weight: bold;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+.contenedor .tarifas .mapa{
+    border: solid white;
+    border-width: 1px;
+    padding: 10px;
+    display: flex;
+    width: 285px;
+    margin: auto;
+}
+.contenedor .tarifas .mapa img{
+    width: 260px;
+}
+
+/* FOOTER PEQUE */
+.contenedor .footer{
+    grid-area: footer;
+    background-color: #a3a1a1; 
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    grid-template-rows: 10% auto 10%;
+    grid-template-areas: "header-footer header-footer"
+                         "main-footer main-footer"
+                         "footer-footer footer-footer";
+    padding: 0 5px;   
+    height: 450px;
+    color: white;
+    list-style: none;
+}
+.contenedor .footer .main-footer{
+    list-style: none;
+}
+.contenedor .footer .header-footer{
+    grid-area: header-footer;
+    margin-top: 10px;
+    list-style: none;
+}
+.contenedor .footer .main-footer{
+    grid-area: main-footer;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 20% auto;
+    grid-template-areas: "links redes"
+                         "links stores";
+    margin: 15px 0;  
+    border-top-style: solid;
+    border-width: 1px;
+    padding: 5px;
+    list-style: none;
+}
+.contenedor .footer .main-footer img{
+    width: 125px;
+    list-style: none;
+}
+
+.contenedor .footer .main-footer .links{
+    grid-area: links;
+    list-style: none;
+}
+.contenedor .footer .main-footer .redes{
+    grid-area: redes;
+    list-style: none;
+}
+.contenedor .footer .main-footer .links li{
+    margin: 20px 0;
+    list-style: none;
+    
+}
+.contenedor .footer .main-footer .redes li{
+    margin: 3px;
+    list-style: none;
+}
+.contenedor .footer .main-footer .redes li{
+    display: inline-block;
+    list-style: none;
+  
+}
+.contenedor .footer .main-footer .stores{
+    grid-area: stores;
+    list-style: none;
+}
+.contenedor .footer .main-footer .stores li{
+    margin-bottom: 10px;
+    list-style: none;
+}
+.contenedor .footer .footer-footer{
+    grid-area: footer-footer;
+    border-top-style: solid;
+    border-color: white;
+    border-width: 1px;
+    list-style: none;
+}
+
+/* QUITAR */
+.contenedor .header1{
+    display: none;
+}
+.contenedor .tarifas .mapa img#mapa2{
+    display:none;
+}
+.contenedor .footer .main-footer .second-list{
+    display: none;
+    list-style:none ;
+}
+.contenedor .footer .footer-footer p{
+    margin-top: 10px;
+}
+.contenedor .formulario{
+    display: none;
+}
+}
+
+@media (min-width: 1281px){
+    .contenedor .header{
+        display: none;
+    }
+    .contenedor #header1{
+        display: block;
+    }
+    .contenedor .hero .caja-lateral{
+        display: none;
+    }
+    .contenedor .informacion{
+        display: none;
+    }
+    .contenedor .tarifas .mapa img#mapa{
+        display: none;
+    }
+    /* HEADER */
+    .contenedor .header1{
+        display:grid;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: "logo menu";
+        height: 22vh;
+        padding: 20px 30px;
+        background: #f7df02;
+    }
+    .contenedor .header1 figure{
+        grid-area: logo;
+        align-self: center;
+    }
+    .contenedor .header1 ul{
+        grid-area: menu;
+        font-size: 30px;
+        justify-self: end;
+        list-style: none;
+        text-align: right;
+    }
+    .contenedor .header1 ul li{
+        list-style: none;
+        display: inline;
+        margin: 0px 40px;
+    }
+    .contenedor .formulario{
+        width: 500px;
+        max-block-size: 100%;
+        margin: auto;
+        margin-top: 20px;
+        box-shadow: 0 0 20px 1px rgba(0,0,0,0.3);
+        position: relative;
+    }
+    .contenedor .formulario .formulario__titulo{
+        text-align: center;
+        margin-top: 0;
+        color: rgba(0, 0, 0, 0.7)
+    }
+    .contenedor .formulario .formulario__input
+    .contenedor .formulario .formulario__label
+    .contenedor .formulario .formulario__submit{
+        display: block;
+        width: 100%;
+        font-size:1.3em;
+    }
+    .contenedor .formulario .formulario__input{
+        padding: 20px;
+        background: transparent;
+        border: 1px solid regb(0,0,0,0.3);
+        margin-bottom: 40px;
+    }
+    .contenedor .formulario .formulario__input:focus{
+        outline: 1px solid rgba(0, 0, 0, 0.7)
+    } 
+     .contenedor .formulario .formulario__input:focus + 
+    .formulario__label{
+        margin-top:-130px;
+    }
+    .contenedor .formulario .formulario__label{
+        padding-left: 15px;
+        position: absolute;
+        margin-top:-85;
+        z-index: -20;
+        color: rgba(0,0,0,0.5)
+    }
+    .contenedor .formulario .formulario__submit{
+       background: rgba(0, 0, 0, 0.7);
+       color: white;
+       padding: 10px 20px;
+       cursor:pointer;
+       border:none;
+    }
+
+    /* HERO */
+    .contenedor .hero{
+        background: url(../MEX008-labcar/labcar/img/taxi.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 950px;
+        background-position: bottom;
+        display: grid;
+        grid-template-columns: repeat(5,20%);
+        grid-template-rows: repeat(4,25%);  
+    }
+    .contenedor .hero .caja-lateral1{
+        display: block;
+        grid-column-start: 4;
+        grid-column-end: 6;
+        grid-row-start: 2;
+        grid-row-end: 4;
+        background:  #f3f02a;
+        color: white;
+        padding: 25px 22px 25px 48px;
+    }
+    .contenedor .hero .caja-lateral1 p:nth-child(1),
+    .contenedor .hero .caja-lateral1 p:nth-child(2){
+        font-size: 35pt;
+    }
+    .contenedor .hero .caja-lateral1 p:nth-child(3){
+        font-size: 22pt;
+        margin-top: 25px;
+        margin-bottom: 20px;
+    }
+    .contenedor .hero .caja-lateral1 .o{
+        text-align: center;
+        font-size: 14pt;
+    }
+    .contenedor .hero .caja-lateral1 .registra{
+        background: white;
+        border: none;
+        border-radius: 5px;
+        height: 6vh;
+        width: 10vw;
+        font-size: 18pt;
+       
+    }
+    .contenedor .hero .caja-lateral1 .conduc{
+        background: white;
+        border: none;
+        border-radius: 5px;
+        height: 6vh;
+        width: 40vh;
+        font-size: 16pt;
+        font-weight: bold;
+        margin-top: 45px;
+    }
+    .contenedor .hero .caja-lateral1 .linea1{
+        width: 170px;
+        margin-left: 4%;
+        margin-right: 50%;
+        background-color: white;
+        color: white;
+       
+    }
+    .contenedor .hero .caja-lateral1 .linea2{
+        width: 170px;
+        margin-right: 0%;
+        margin-left: 75%;
+        background-color: white;
+        color: white;
+    }
+    
+
+    /* INFORMACION */
+    .contenedor .informacion1{
+        background:  #f3f02a;
+        padding: 55px 250px 56px 0px;
+    }
+    .contenedor .informacion1 .borde{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: "img txt";
+    }
+    .contenedor .informacion1 .borde{
+        border-style: solid solid solid none;
+        border-color: white;
+        border-width: 1px;
+        padding-left: 100px;
+    }
+    .contenedor .informacion1 .borde figure{
+        grid-area: img;
+        height: 510px;
+        margin: 50px 0px;
+    }
+    .contenedor .informacion1 .borde figure img{
+        height: 500px;
+    }
+    .contenedor .informacion1 .borde .text{
+        grid-area: txt;
+        align-self: center;
+        color: white;
+        padding-right: 245px;
+    }
+    .contenedor .informacion1 .borde .text h3{
+        font-size: 27pt;
+        margin-bottom: 25px;
+    }
+    .contenedor .informacion1 .borde .text p{
+        font-size: 20pt;
+        margin-bottom: 40px;
+    }
+
+    /* CONDURTOR */
+    .contenedor .conductor{
+        background: url(../MEX008-labcar/labcar/img/conduce.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 620px;
+        display: grid;
+        grid-template-columns: 70% 30%;    
+        color: white;    
+    }
+    .contenedor .conductor .conduce{
+        grid-column-start: 2;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 150px 30px;
+    }
+    .contenedor .conductor .conduce h3{
+        font-size: 27pt;
+        margin-bottom: 10px;
+    }
+    .contenedor .conductor .conduce p{
+        font-size: 17pt;
+        margin-bottom: 20px;
+    }
+    .contenedor .conductor .conduce button{
+        background:  #f3f02a;
+        border: none;
+        border-radius: 6px;
+        color: white;
+        height: 5vh;
+        width: 18vw;
+        font-size: 15pt;
+        font-weight: bold;
+    }
+
+    /* PRECIO */
+    .contenedor .tarifas{
+        background:  #f3f02a;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: "location map"
+    }
+    .contenedor .tarifas .direcciones{
+        grid-area: location;
+        color: white;
+        padding: 100px;
+        align-self: center;
+    }
+    .contenedor .tarifas .mapa{
+        grid-area: map;
+        margin: 50px 0px;
+    }
+    .contenedor .tarifas .direcciones h3{
+        font-size: 24pt;
+        margin-bottom: 15px;
+    }
+    .contenedor .tarifas .direcciones p{
+        font-size: 16pt;
+        margin-bottom: 20px;
+    }
+    .contenedor .tarifas .direcciones p input{
+        background:  #f3f02a;
+        border-style: solid;
+        border-color: white;
+        border-width: 1px;
+        border-radius: 6px;
+        margin-left: 25px;
+        margin-bottom: 5px;
+        width: 25vw;
+        height: 5vh;
+    }
+    .contenedor .tarifas .direcciones p button{
+        background: #ffffff;
+        border: none;
+        border-radius: 6px;
+        height: 6vh;
+        width: 20vh;
+        font-size: 12pt;
+        margin: 0px 180px;
+    }
+    .contenedor .tarifas .mapa img{
+        border-style: solid;
+        border-color: white;
+        border-width: 1px;
+        padding: 15px;
+        height: 650px;
+        width: 650px;
+    }
+
+    /* FOOTER */
+    .contenedor .footer{
+        background: #a3a1a1;
+        display: grid;
+        grid-template-columns: repeat(4,25%);
+        grid-template-rows: 20% 60% 20%;
+        grid-template-areas: "header header header header"
+                             "redes list1 list2 stores"  
+                             "foot foot foot foot";
+                             height: 850px;
+        color: white; 
+    }
+    .contenedor .footer .header-footer{
+        grid-area: header;
+    }
+    .contenedor .footer links{
+        grid-area: list1;
+        list-style:none;
+    }
+    .contenedor .footer .links2{
+        grid-area: list2;
+        list-style: none;
+    }
+    .contenedor .footer .redes{
+        grid-area: redes;
+        list-style: none;
+    }
+    .contenedor .footer .stores{
+        grid-area: stores;
+        list-style: none;
+    }
+    .contenedor .footer .header-footer img{
+        height: 35px;
+        list-style: none;
+    }
+}
