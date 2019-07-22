@@ -60,7 +60,7 @@
                         <br>
                         Eres dueño de tu tiempo</h1>
                     <p>Viaja con <img src= "../labcar/img/logo-blanco.png"/></p>
-                    <input type="button" class="registro" value="REGÍSTRATE"/>
+                    <input type="button" id="registro" class="registro" value="REGÍSTRATE"/>
                     <div class="box-line"> 
                             <hr/><p>O bien</p><hr/>
                     </div>
@@ -73,24 +73,26 @@
             </section>
 
             <div class="modal-reg" id="modal-reg">
-                <div>
+                <div class="equis">
                     <a href="#">X</a>
                 </div>
-                <div>
+                <div class="modal-title">
                     <p>¿Ya tienes una cuenta?</p>
                 </div>
-                <p>O CREA UNA CUENTA NUEVA</p>
-                <div>
-                    <input type="text" placeholder="Nombre">
-                    <input type="text" placeholder="Apellido">
+                <div class="modal-subtitle">
+                    <p>O CREA UNA CUENTA NUEVA</p>
+                </div>               
+                <div class="reg-name">
+                    <input class="date-name" type="text" placeholder="Nombre">
+                    <input class="date-name" type="text" placeholder="Apellido">
                 </div>
-                <div>
-                    <input type="text" placeholder="Correo Electronico: ejemplo@correo.mx">
-                    <input type="text" placeholder="Teléfono">
-                    <input type="text" placeholder="Contraseña">
-                    <input type="text" placeholder="Ciudad">
-                    <input type="text" placeholder="(opcional) Código de invitación">
-                    <select name="opciones" id="options" class="options">
+                <div class="reg-input">
+                    <input class="register" type="text" placeholder="Correo Electronico: ejemplo@correo.mx">
+                    <input class="register" type="text" placeholder="Teléfono">
+                    <input class="register" type="text" placeholder="Contraseña">
+                    <input class="register" type="text" placeholder="Ciudad">
+                    <input class="register" type="text" placeholder="(opcional) Código de invitación">
+                    <select name="opciones" id="options" class="register">
                         <option value="nothing">¿Cómo te enteraste de Nosotros? ^</option>
                         <option value="facebook">Facebook</option>
                         <option value="twitter">Twitter</option>
@@ -98,7 +100,7 @@
                         <option value="television">Televisión</option>
                         <option value="another">Otros</option>
                     </select>
-                    <input type="button" name="ENVIAR" id="enviar">
+                    <input type="button" value="ENVIAR" id="enviar" class="register">
 
                 </div>
             </div>

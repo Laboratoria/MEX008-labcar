@@ -165,7 +165,7 @@
     }
 
     .modal-session{
-        display: none;
+        display: flex;
         visibility: collapse;
     }
     /* Sección Hero */

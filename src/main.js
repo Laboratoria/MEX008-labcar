@@ -2,10 +2,19 @@ const sesion=document.getElementById("inicia-sesion");
 const modalSesion=document.getElementById("modal-session");
 const close=document.getElementById("logging");
 
+const registrate=document.getElementById("registro");
+const modalRegisttro=document.getElementById("modal-reg");
+const enviar=document.getElementById("enviar");
+
 
 const show = () =>{
     modalSesion.style.display="flex";
     modalSesion.style.visibility="visible";
+}
+
+const showa = () =>{
+    modalRegisttro.style.display="flex";
+    modalRegisttro.style.visibility="visible";
 }
 
 const closeWindow = () =>{
@@ -13,8 +22,16 @@ const closeWindow = () =>{
     modalSesion.style.visibility="collapse";
 }
 
+const closeWindowa = () =>{
+    modalRegisttro.style.display = "none";
+    modalRegisttro.style.visibility="collapse";
+}
+
+
 sesion.addEventListener('click', show);
 close.addEventListener('click', closeWindow);
+registrate.addEventListener('click', showa);
+enviar.addEventListener('click', closeWindowa);
 
 let menu= document.querySelector('.main-hamburger');
 
