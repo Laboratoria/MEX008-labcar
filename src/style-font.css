@@ -40,3 +40,9 @@
   .icon-linkedin2:before {
     content: "\eaca";
   }
+  .icon-user:before {
+    content: "\e971";
+  }
+  .icon-lock:before {
+    content: "\e98f";
+  }

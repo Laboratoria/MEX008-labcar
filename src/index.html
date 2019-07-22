@@ -27,10 +27,32 @@
                     <ul>
                         <li><a href="#">Viaja</a></li>
                         <li><a href="#">Conduce</a></li>
-                        <li><a href="#">Inicia sesión</a></li>
+                        <li><a id="inicia-sesion" href="#">Inicia sesión</a></li>
                     </ul>              
                 </nav>
             </header>
+
+            <div class="modal-session" id="modal-session">
+                <div class="span-close">
+                   <a id="cerrar" href="#">X</a>
+                </div>               
+                <div class="avatar">
+                    <img src="../labcar/img/avatar.jpg">
+                </div>
+                <hr class="line-modal"/> 
+                <div class="date-users">
+                    <div class="users">
+                        <span class="icon-user"></span>                       
+                        <input type="text" placeholder="Username">
+                    </div>
+                    <div class="password">
+                        <span class="icon-lock"></span>
+                        <input type="text" placeholder="Password">
+                    </div>
+                    <input type="button" id="logging" class="logging" VALUE="LOGING">
+                    <p>Forgot password? <a href="#">Click Here</a></p>
+                </div>               
+            </div>
 
             <section class="hero" id="hero">
                 <div class= "hero-text" id="hero-text">
@@ -47,9 +69,39 @@
                 <div class="hero-mobile" id="hero-mobile">
                         <p id="paragraph">Comienza a viajar con <img id="img" src= "../labcar/img/logo-blanco.png"/></p>
                         <input type="button" class="reg-mobile" id="reg-mobile" value="Descarga la app"/>
-                </div>
-                
+                </div>               
             </section>
+
+            <div class="modal-reg" id="modal-reg">
+                <div>
+                    <a href="#">X</a>
+                </div>
+                <div>
+                    <p>¿Ya tienes una cuenta?</p>
+                </div>
+                <p>O CREA UNA CUENTA NUEVA</p>
+                <div>
+                    <input type="text" placeholder="Nombre">
+                    <input type="text" placeholder="Apellido">
+                </div>
+                <div>
+                    <input type="text" placeholder="Correo Electronico: ejemplo@correo.mx">
+                    <input type="text" placeholder="Teléfono">
+                    <input type="text" placeholder="Contraseña">
+                    <input type="text" placeholder="Ciudad">
+                    <input type="text" placeholder="(opcional) Código de invitación">
+                    <select name="opciones" id="options" class="options">
+                        <option value="nothing">¿Cómo te enteraste de Nosotros? ^</option>
+                        <option value="facebook">Facebook</option>
+                        <option value="twitter">Twitter</option>
+                        <option value="radio">Radio</option>
+                        <option value="television">Televisión</option>
+                        <option value="another">Otros</option>
+                    </select>
+                    <input type="button" name="ENVIAR" id="enviar">
+
+                </div>
+            </div>
 
             <section class="information" id="information">   
                 <div class="information-container" id="information-container">
