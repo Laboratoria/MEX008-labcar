@@ -301,7 +301,6 @@ body {
 .root .footer-desktop .main-footer .links1 {
   grid-area: links1;
   align-self: center;
-  /* height: 100%; */
 }
 
 /* .root .footer-desktop .main-footer .links1 ul {
