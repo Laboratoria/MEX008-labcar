@@ -10,11 +10,17 @@ const enviar=document.getElementById("enviar");
 const show = () =>{
     modalSesion.style.display="flex";
     modalSesion.style.visibility="visible";
+    modalSesion.style.marginTop = "100px";
+    modalSesion.style.left = ((document.body.clientWidth-350) / 2) +  "px";
+    modalSesion.style.display = "flex";
 }
 
 const showa = () =>{
     modalRegisttro.style.display="flex";
     modalRegisttro.style.visibility="visible";
+    modalRegisttro.style.marginTop = "100px";
+    modalRegisttro.style.left = ((document.body.clientWidth-350) / 2) +  "px";
+    modalRegisttro.style.display = "flex";
 }
 
 const closeWindow = () =>{

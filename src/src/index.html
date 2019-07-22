@@ -54,6 +54,38 @@
                 </div>               
             </div>
 
+            <div class="modal-reg" id="modal-reg">
+                    <div class="equis">
+                        <a href="#">X</a>
+                    </div>
+                    <div class="modal-title">
+                        <p>¿Ya tienes una cuenta?</p>
+                    </div>
+                    <div class="modal-subtitle">
+                        <p>O CREA UNA CUENTA NUEVA</p>
+                    </div>               
+                    <div class="reg-name">
+                        <input class="date-name" type="text" placeholder="Nombre">
+                        <input class="date-name" type="text" placeholder="Apellido">
+                    </div>
+                    <div class="reg-input">
+                        <input class="register" type="text" placeholder="Correo Electronico: ejemplo@correo.mx">
+                        <input class="register" type="text" placeholder="Teléfono">
+                        <input class="register" type="text" placeholder="Contraseña">
+                        <input class="register" type="text" placeholder="Ciudad">
+                        <input class="register" type="text" placeholder="(opcional) Código de invitación">
+                        <select name="opciones" id="options" class="register">
+                            <option value="nothing">¿Cómo te enteraste de Nosotros? ^</option>
+                            <option value="facebook">Facebook</option>
+                            <option value="twitter">Twitter</option>
+                            <option value="radio">Radio</option>
+                            <option value="television">Televisión</option>
+                            <option value="another">Otros</option>
+                        </select>
+                        <input type="button" value="ENVIAR" id="enviar" class="register">
+                    </div>
+                </div>
+
             <section class="hero" id="hero">
                 <div class= "hero-text" id="hero-text">
                     <h1>Disfruta del viaje 
@@ -71,39 +103,6 @@
                         <input type="button" class="reg-mobile" id="reg-mobile" value="Descarga la app"/>
                 </div>               
             </section>
-
-            <div class="modal-reg" id="modal-reg">
-                <div class="equis">
-                    <a href="#">X</a>
-                </div>
-                <div class="modal-title">
-                    <p>¿Ya tienes una cuenta?</p>
-                </div>
-                <div class="modal-subtitle">
-                    <p>O CREA UNA CUENTA NUEVA</p>
-                </div>               
-                <div class="reg-name">
-                    <input class="date-name" type="text" placeholder="Nombre">
-                    <input class="date-name" type="text" placeholder="Apellido">
-                </div>
-                <div class="reg-input">
-                    <input class="register" type="text" placeholder="Correo Electronico: ejemplo@correo.mx">
-                    <input class="register" type="text" placeholder="Teléfono">
-                    <input class="register" type="text" placeholder="Contraseña">
-                    <input class="register" type="text" placeholder="Ciudad">
-                    <input class="register" type="text" placeholder="(opcional) Código de invitación">
-                    <select name="opciones" id="options" class="register">
-                        <option value="nothing">¿Cómo te enteraste de Nosotros? ^</option>
-                        <option value="facebook">Facebook</option>
-                        <option value="twitter">Twitter</option>
-                        <option value="radio">Radio</option>
-                        <option value="television">Televisión</option>
-                        <option value="another">Otros</option>
-                    </select>
-                    <input type="button" value="ENVIAR" id="enviar" class="register">
-
-                </div>
-            </div>
 
             <section class="information" id="information">   
                 <div class="information-container" id="information-container">
@@ -127,7 +126,74 @@
                 </div>   
             </section>
 
-          <section class="section-conductor" id="section-conductor">
+            <div class="modal-conductor" id="modal-conductor">
+                <div class="close-conductor">
+                    <a href="#">X</a>
+                </div>
+                <div class="div-conductor">
+                    <div class="div-text">
+                        <p>¿Tienes vehículo de 4 puertas?</p>
+                    </div>
+                    <div class="div-conductor">
+                        <select name="have-auto" id="have-auto" class="auto-register">
+                            <option value="nothing">Elige una opción</option>
+                            <option value="yes">Si</option>
+                            <option value="No">No</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="div-conductor">
+                    <div>
+                        <p>Marca</p>
+                    </div>
+                    <div>
+                        <select name="register-auto" id="register-auto" class="auto-register">
+                            <option value="nothing">Elige una opción</option>
+                            <option value="chrevolet">Chevrolet</option>
+                            <option value="chrysler">Chrysler</option>
+                            <option value="ford">Ford</option>
+                            <option value="chrysler">Chrysler</option>
+                            <option value="honda">Honda</option>
+                            <option value="mazda">Mazda</option>
+                            <option value="nissan">Nissan</option>
+                            <option value="seat">Seat</option>
+                            <option value="toyota">Toyota</option>
+                            <option value="volkswagen">Volkswagen</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="div-conductor">
+                    <div class="div-text">
+                        <p>Modelo</p>
+                    </div>
+                        <div>
+                            <select name="modelo-auto" id="modelo-auto" class="auto-register">
+                                <option value="nothing">Elige una opción</option>
+                            </select>
+                        </div>                    
+                </div>
+                <div class="div-conductor">
+                    <div class="div-text">
+                        <p>Año</p>
+                    </div>
+                    <div>
+                        <select name="year-auto" id="year-auto" class="auto-register">
+                            <option value="nothing">Elige una opción</option>
+                        </select>
+                    </div>       
+                </div>
+                <div class="div-conductor">
+                    <div class="div-text">
+                        <p>Número de la matrícula</p>
+                    </div>
+                </div>
+                    
+                <div class="div-conductor">
+                    <input type="text" placeholder="Numero de la matrícula">
+                </div>
+            </div>
+
+            <section class="section-conductor" id="section-conductor">
                 <div class="conductor-text" id="conductor-text">
                     <h4 class="h4" >Conduce cuando quieras</h4>
                     <br>

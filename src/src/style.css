@@ -73,7 +73,10 @@ img{
     justify-content: space-between;
     width: 30vmax;
     height: 70vmin;
-    background: #23ac98;  
+    background: #23ac98; 
+    border-radius: 5px; 
+    position: absolute;
+    z-index: 1;
 }
 
 .span-close{
@@ -118,13 +121,14 @@ img{
     width: 100%;
     size: 10px;
     position: relative;
-    bottom: 8%
+    bottom: 5%
 }
 
 .date-users{
     display: flex;
     box-sizing: border-box;
-    width: 60%;
+    border-radius: 15px;
+    width: 70%;
     height: 45%;
     flex-direction: column;
     justify-content: space-around;
@@ -248,6 +252,7 @@ hr{
     width: 30vmax;
     height: 70vmin;
     background: gray; 
+    border-radius: 15px;
     position: absolute;
     z-index: 1;
 }
@@ -382,6 +387,45 @@ h2{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1vw;
 }
+
+/* Modal conductor */
+.modal-conductor{
+    display: flex;
+    /* visibility: collapse; */
+    box-sizing: border-box;
+    padding: 0% 1% 1% 1%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 30vmax;
+    height: 70vmin;
+    background: gray; 
+    border-radius: 15px;
+    position: absolute;
+    z-index: 1;
+}
+
+.close-conductor{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end;
+    align-self: flex-end;
+    width: 50%;
+    height: 5%;
+    border: solid yellow 2px;
+}
+
+.div-conductor{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 98%;
+    height: 15%;
+    border: solid yellow 2px;
+}
+
 
 .section-conductor{
     display: flex;
