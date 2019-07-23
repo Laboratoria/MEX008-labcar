@@ -1,0 +1,1015 @@
+/*Selector universal*/
+*{ 
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+/* #desktop-view{
+  display: none;
+}
+#mobile-view{
+  display: contents;
+} */
+body{
+  font-size: 10px;
+}
+#navigation >label{
+  height:100% ;/**/
+  /* font-size: 1em; */
+  color:gray;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; 
+  cursor: pointer;
+}
+#menu{
+  width: 100vw;
+  top:100%;
+}
+
+#navigation #menu,
+#navigation > input {
+  display: none;
+}  
+.driver-text >h3 {
+  font-size: 1.25rem;
+  padding: 2rem 1rem 0rem 1rem;
+}   
+
+/* .celular{
+  height: 85%;
+} */
+
+.header-and-navigation{
+  display: flex;/**/
+  justify-content: space-between;/**/
+  height: 15vh;/**/
+ /*  border: solid 2px blue; */
+}
+#header{
+  width: 75vw; /**/
+ /*  border: solid 2px yellow; */
+  display:flex; /**/
+  justify-content: center;/**/
+  align-items: center;  /**/
+}
+
+#navigation{ 
+   width: 25vw;/**/
+   
+   /* border: solid 2px pink; */
+}
+
+#navigation > input:checked + #menu {
+  display: block;
+  clear: both;
+  background: white;
+  color:black;
+}
+#menu >li{
+  padding: 20px;
+}
+.hero{
+    
+    background-image: url("taxi.jpg"); 
+    background-repeat: no-repeat;
+    background-size: 100% 100%; /*Sets the width and height of the background image in percent of the parent element. 
+    The first value sets the width, the second value sets the height.*/
+ /* position: relative; */
+    /*width: 100vw; */ /*Porcentaje relativo a la anchura del viewport.*/
+    height:100vh ; /*Porcentaje relativo a la altura del viewport.*/
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}   
+/* .hero div{
+    justify-content: right;
+    align-items: center;
+}  */   
+#download-button{
+  background-color: white;
+  color:black;
+  border: none;
+  border-radius: 5px;
+  padding:10px;
+  font-weight: bold;
+  margin: 1em;
+}
+.travel{
+    background-color: #f7b617;
+    text-align: left;
+    position: absolute; 
+    width: 75vw;
+    height: 35vh;
+    color: white;
+} 
+.information{ 
+    background-color: #f7b617;
+    color:white;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+   
+}  
+.info-p{
+  font-weight: bold; 
+  display:flex;
+  align-items: center;
+
+}
+.info-div{
+    width: 90vw ;
+    height: 75vh;
+    border: solid 1px white;
+    margin: 2.5rem 1.25rem  0rem 1.25rem ;
+    display:flex;
+   /* justify-content: center; */
+    flex-direction: column; 
+    align-items: center;
+}
+.info-div>h2{
+    height: 15%; 
+}
+.info-div>div{  
+  height: 85%;
+  width: 80%;
+}
+/* .celular{
+  height: 90%;
+  width: 90%;
+} */
+.info-h2{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.driver::before {
+  content: ' ';   
+  background-image: url('conduce.jpg'); /*Establece una imagen como fondo para el div con clase driver*/
+  background-repeat: no-repeat;/*Establece No repetir la imagen*/
+  width: 100vw;/*Porcentaje relativo a la anchura del viewport para el div*/
+  height:50vh ; /*Porcentaje relativo a la altura del viewport para el div.*/
+  background-size: 100% 100%;  /*Sets the width and height of the background image in percent of the parent element. 
+  The first value sets the width, the second value sets the height. porcentaje relativo al padre en este caso al div con clase driver*/
+  display: block;
+  position: absolute; 
+}
+.driver-text{
+  position:relative;
+  width: 100vw;/*Porcentaje relativo a la anchura del viewport para el div*/
+  height:50vh ; /*Porcentaje relativo a la altura del viewport para el div.*/
+  background-size: 100% 100%;  /*Sets the width and height of the background image in percent of the parent element. */
+  color:white;
+  background: rgba(0,0, 0, 0.5);
+}
+
+/* .conduce{
+  width: 100%;
+  height: 100%;
+} */
+#button-driver{
+  background-color: #f7b617;
+  color:white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.rates{
+   
+    background-color: #f7b617;
+    color:white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}    
+/* .rates>div>p, .rates>div>h2{
+  margin: 1.5rem;
+} */
+#button-rates{
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  padding:10px 25px;
+  font-weight: bold;
+  margin: 20px;
+}
+.container-inputs{
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.container-inputs > div{
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+} 
+.input{
+  border-radius:5px;
+  border: solid 1px white;
+  background-color: #f7b617;
+  width: 75vw;
+  padding:10px;
+  margin: 10px;
+}
+.input::placeholder {
+  color:white;
+}
+.footer{
+    padding: 2rem 0.5rem 2rem 0.5rem;
+    background-color:  #2b2b2b ;
+    color: white;
+} 
+.footer-info-2{
+  display:flex;
+  justify-content: center;   
+}
+.footer-info-2 > div{  
+  width: 50%;
+}
+.footer-info-2 > div>img {  
+  width: 90%;
+}
+.footer-info >p {
+  margin: 0.5rem;
+}   
+.footer-info > div> p{
+margin: 0.5rem;
+} 
+.footer-info > div>div{
+  margin: 0.5rem;
+  } 
+/* @font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot');
+  src:  local('icomoon'),/*  url('/fonts/icomoon.eot#iefix') format('embedded-opentype'), */
+/*    url('./fonts/icomoon.ttf') format('truetype'),
+   url('./fonts/icomoon.woff') format('woff'),
+   url('./fonts/icomoon.svg#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+} */  
+/* @font-face { font-family: 'icomoon'; src: local('fonts/icomoon.eot') } */
+/* 
+@font-face {
+  font-family: 'icomoon';
+  src: url('/fonts/icomoon.eot');
+  src: local('icomoon'), url('DejaVuSerif-BoldItalic-webfont.woff') format('woff'), url('DejaVuSerif-BoldItalic-webfont.ttf') format('truetype'), url('DejaVuSerif-BoldItalic-webfont.svg#webfontQAewh7pf') format('svg');
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'DejaVu Serif';
+  src: url('DejaVuSerif-BoldItalic-webfont.eot');
+  src: local('DejaVu Serif Bold Italic'), url('DejaVuSerif-BoldItalic-webfont.woff') format('woff'), url('DejaVuSerif-BoldItalic-webfont.ttf') format('truetype'), url('DejaVuSerif-BoldItalic-webfont.svg#webfontQAewh7pf') format('svg');
+  font-weight: bold;
+  font-style: italic;
+} */
+ /*  [class^="icon-"], [class*=" icon-"] {
+   /*  use !important to prevent issues with browser extensions that change fonts */
+   /*  font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+   */ 
+    /* Better Font Rendering =========== */
+   /*  -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  } 
+  
+  .icon-play3:before {
+    content: "\ea1c";
+  }
+  .icon-facebook:before {
+    content: "\ea90";
+  }
+  .icon-twitter:before {
+    content: "\ea96";
+  }
+  .icon-appleinc:before {
+    content: "\eabe";
+  }
+  .icon-linkedin2:before {
+    content: "\eaca";
+  } */
+
+    
+  @font-face {
+    font-family: 'icomoon';
+    src:  url('/fonts/icomoon.eot?lwlfc0');
+    src:  url('/fonts/icomoon.eot?lwlfc0#iefix') format('embedded-opentype'),
+      url('/fonts/icomoon.ttf?lwlfc0') format('truetype'),
+      url('/fonts/icomoon.woff?lwlfc0') format('woff'),
+      url('/fonts/icomoon.svg?lwlfc0#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+   /*  speak: none; */
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    
+    /* Better Font Rendering =========== */
+    /* -webkit-font-smoothing: antialiased; */
+   /*  -moz-osx-font-smoothing: grayscale; */
+  }
+
+  .info-p-div{
+    height: 19%;
+    display: flex;
+    align-items: center;
+  }
+.icon-play3::before {
+  content: "\ea1c";
+}
+.icon-facebook:before {
+  content: "\ea90";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
+.icon-appleinc:before {
+  content: "\eabe";
+}
+.icon-linkedin2:before {
+  content: "\eaca";
+}
+
+
+
+/*********************************Media queries para mobile****************************/
+
+@media screen and (width: 320px)  {
+  #desktop-view{
+    display: none;
+  }
+  #mobile-view{
+    display: contents;
+  }
+  #navigation >label{
+    font-size: 2.5em;
+  }
+  #header >img{
+    width: 40%;
+    height:25% ;
+  }
+  #menu{
+    font-size: 1.5em;
+ }
+ .travel{
+  padding:3em;
+ }
+ .travel>h2{
+  font-size: 3em;
+}
+.travel>h2>img{
+  height: 25px;
+}
+ #download-button{
+  font-size: 1.5em;
+}
+/* #header > img {
+  width: 30%;
+  height: 20%;
+} */
+/*  .travel > h2 > img{
+    height:60px; 
+ 
+ } */
+ .info-h2{
+   font-size:3em;
+} 
+.info-p{
+  font-size:2em;
+}
+.info-p-div{
+  height: 20%;
+  display: flex;
+  align-items: center;
+}
+.celular{
+  height: 90%;
+  width: 90%;
+}
+#button-driver {
+  padding: 0.5em;
+  margin: 0.5em;
+  font-size: 2em;
+}
+.driver-text>p{
+  font-size: 1.8em;
+  padding:16px;
+}
+.driver-text >h3 {
+ font-size: 2em;
+ padding: 2rem 1rem 0rem 1rem;
+}
+.rates>div>p, .rates>div>h2{
+  font-size: 2em;
+  padding: 0.5em;/*Medida con respecto al fontsize*/
+}
+.input {
+  border-radius: 5px;
+  width: 75vw;
+  padding: 1em;
+  margin: 1em;
+  font-size: 1.8em;
+}
+#button-rates {
+  font-size: 1.5em;
+}
+.footer{
+  font-size: 1.6em;
+}
+.footer-info > div>div>p {
+  margin: 0.5rem;
+}
+}
+@media screen and (min-width: 321px )and (max-width: 479px) {
+  #desktop-view{
+    display: none;
+  }
+  #mobile-view{
+    display: contents;
+  }
+  #navigation >label{
+    font-size: 2.5em;
+  }
+  #header >img{
+    width: 40%;
+    height:25% ;
+  }
+  #menu{
+    font-size: 1.5em;
+ }
+ .travel{
+  padding:3em;
+ }
+ .travel>h2{
+  font-size: 3em;
+}
+.travel>h2>img{
+  height: 25px;
+}
+ #download-button{
+  font-size: 2em;
+}
+/* #header > img {
+  width: 30%;
+  height: 20%;
+} */
+/*  .travel > h2 > img{
+    height:60px; 
+ 
+ } */
+ .info-h2{
+   font-size:3em;
+} 
+.info-p{
+  font-size:2em;
+}
+.info-p-div{
+  height: 20%;
+  display: flex;
+  align-items: center;
+}
+.celular{
+  height: 90%;
+  width: 90%;
+}
+#button-driver {
+  padding: 0.5em;
+  margin: 0.5em;
+  font-size: 2em;
+}
+.driver-text>p{
+  font-size: 1.8em;
+  padding:16px;
+}
+.driver-text >h3 {
+ font-size: 2em;
+ padding: 2rem 1rem 0rem 1rem;
+}
+.rates>div>p, .rates>div>h2{
+  font-size: 2em;
+  padding: 0.5em;/*Medida con respecto al fontsize*/
+}
+.input {
+  border-radius: 5px;
+  width: 75vw;
+  padding: 1em;
+  margin: 1em;
+  font-size: 1.8em;
+}
+#button-rates {
+  font-size: 1.5em;
+}
+.footer{
+  font-size: 1.6em;
+}
+.footer-info > div>div>p {
+  margin: 0.5rem;
+}
+}
+@media screen and (min-width: 480px )and (max-width:599px) {
+  #desktop-view{
+    display: none;
+  }
+  #mobile-view{
+    display: contents;
+  }
+ 
+  #navigation >label{
+    font-size: 3em;
+  }
+  #menu{
+    font-size: 2em;
+ }
+ .travel{
+  padding:3em;
+  
+ }
+ .travel>h2{
+  font-size: 3.5em;
+  
+ }
+.travel>h2>img{
+   height:28px;
+ }
+#download-button{
+  font-size: 2.3em;
+}
+.info-h2{
+  font-size:3.5em;
+} 
+.info-p{
+  font-size:2.5em;
+}
+
+.info-p-div{
+  height: 20%;
+  display: flex;
+  align-items: center;
+}
+.driver-text>p{
+  font-size:2em;
+  padding:16px;
+}
+.celular{
+  height: 90%;
+  width: 90%;
+}
+#button-driver {
+  padding: 0.5em;
+  margin: 0.5em;
+  font-size: 2.5em;
+}
+.driver-text>p{
+  font-size: 2.3em;
+  padding:16px;
+}
+.driver-text >h3 {
+ font-size: 2.5em;
+ padding: 2rem 1rem 0rem 1rem;
+}
+
+ .rates>div>p, .rates>div>h2{
+   font-size: 2.5em;
+   padding: 0.5em;/*Medida con respecto al fontsize*/
+ }
+ .input {
+   border-radius: 5px;
+   width: 75vw;
+   padding: 1em;
+   margin: 1em;
+   font-size: 2.3em;
+ }
+ #button-rates {
+   font-size: 2em;
+ }
+ .footer{
+   font-size: 2em;
+ }
+ .footer-info > div>div>p {
+   margin: 0.5rem;
+ }
+}
+
+@media screen and (min-width: 600px )and (max-width:699px) {
+  #desktop-view{
+    display: none;
+  }
+  #mobile-view{
+    display: contents;
+  }
+ 
+  #navigation >label{
+    font-size: 3.2em;
+  }
+  #menu{
+    font-size: 2em;
+ }
+ .travel{
+  padding:3em;
+  
+ }
+ .travel>h2{
+  font-size: 3.8em;
+  
+ }
+.travel>h2>img{
+   height: 30px;
+ }
+#download-button{
+  font-size: 2.8em;
+}
+.info-h2{
+  font-size:4em;
+} 
+.info-p {
+  font-size:3em;
+}
+.info-p-div{
+  height: 20%;
+  display: flex;
+  align-items: center;
+}
+.celular{
+  height: 90%;
+  width: 90%;
+}
+#button-driver {
+  padding: 0.5em;
+  margin: 0.5em;
+  font-size: 3em;
+}
+.driver-text>p{
+  font-size:2.8em;
+  padding:16px;
+}
+.driver-text >h3 {
+ font-size: 3em;
+ padding: 2rem 1rem 0rem 1rem;
+}
+
+.rates>div>p, .rates>div>h2{
+  font-size: 3em;
+  padding: 0.5em;/*Medida con respecto al fontsize*/
+}
+.input {
+  border-radius: 5px;
+  width: 75vw;
+  padding: 1em;
+  margin: 1em;
+  font-size: 2.8em;
+}
+#button-rates {
+  font-size: 2.5em;
+}
+.footer{
+  font-size: 2.5em;
+}
+.footer-info > div>div>p {
+  margin: 0.5rem;
+}
+}
+/*****************************************************************************************************/
+@media (min-width: 700px) /* and (max-width: 1200px) */ { 
+  #desktop-view{
+    display: contents;
+  }
+  #mobile-view{
+    display: none;
+  }
+  .header-and-navigation-desk{
+    display:flex; 
+    justify-content: space-between;
+  } 
+  #header-desk{
+    width:50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #header-desk>img{
+    height: 40%;
+  
+  } 
+  #menu-desk{
+    width:50vw;
+    display: flex;
+    justify-content: center;
+  }
+  #menu-desk > li{/* 
+    position: relative;  */
+    display: inline-block; 
+   /*  padding-right: 15px; 
+    padding-left: 15px;
+    font-family: 'Lato', sans-serif;  */ 
+    padding: 2em;
+    font-size: 1.5em;
+
+  }
+ .hero-desk{  
+    background-image: url("taxi.jpg"); 
+    background-repeat: no-repeat;
+    background-size: 100% 100%; /*Sets the width and height of the background image in percent of the parent element. 
+    The first value sets the width, the second value sets the height.*/
+   /*  position: relative;  */
+    /* width: 100vw;  *//*Porcentaje relativo a la anchura del viewport.*/
+    height:160vh ; /*Porcentaje relativo a la altura del viewport.*/
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+   
+} 
+.travel-desk{
+  background-color: #f7b617;
+  text-align: left;
+  position: absolute; 
+  width: 35vw;
+  height: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}  
+.travel-desk>div{
+  margin:2em;
+}
+.travel-desk>div>h2{
+
+  font-size: 3em;
+}
+.travel-desk>div>h4{
+
+  font-size: 2em;
+}
+.travel-desk>div>h4>img{
+  height: 20px;
+}
+.travel-desk>div>p{
+  font-size:15px;
+}
+.travel-desk>div>hr{
+  width: 40%;
+ display: inline-block;
+  color:white;
+  
+}
+.well{
+  text-align: center;
+  
+  
+}
+#download-button-desk{
+  background-color: white;
+  color:black;
+  border: none;
+  border-radius: 5px;
+  padding:10px;
+  font-weight: bold;
+  width: 60%;
+  margin:2em;
+}
+
+
+ 
+.information-desk{ 
+  background-color: #f7b617;
+  color:white;
+  /* text-align: center; */
+  
+  height: 100vh;
+  display:flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+ 
+}
+.info{
+  border: solid 1px white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 80vw;
+  height: 80vh;
+  padding: 20px;
+  
+}  
+.info>div{
+  display: flex;
+  align-items: center;
+}
+.info-p-desk{
+font-weight: bold; 
+display:flex;
+align-items: center;
+}
+.info-div-desk>p{
+   font-size: 17px;
+   margin:10px;
+}
+.info-div-desk{
+  display:flex;
+ justify-content: center;
+  flex-direction: column; 
+ 
+} 
+
+.celular{
+height: 80%;
+
+}
+.info-h2-desk{
+display:flex;
+/* justify-content: center; */
+align-items: center;
+font-size: 25px;
+margin:10px;
+}
+.driver-desk{
+ display:flex;
+ justify-content: flex-end;
+}
+.driver-desk::before {
+  content: ' ';   
+  background-image: url('conduce.jpg'); /*Establece una imagen como fondo para el div con clase driver*/
+  background-repeat: no-repeat;/*Establece No repetir la imagen*/
+  width: 100vw;/*Porcentaje relativo a la anchura del viewport para el div*/
+  height:100vh ; /*Porcentaje relativo a la altura del viewport para el div.*/
+  background-size: 100% 100%;  /*Sets the width and height of the background image in percent of the parent element. 
+  The first value sets the width, the second value sets the height. porcentaje relativo al padre en este caso al div con clase driver*/
+  display: block;
+  position: absolute; 
+}
+.driver-text-desk{
+  position:relative;
+  width: 35vw;/*Porcentaje relativo a la anchura del viewport para el div*/
+  height:100vh ; /*Porcentaje relativo a la altura del viewport para el div.*/
+ /*  background-size: 100% 100%;   *//*Sets the width and height of the background image in percent of the parent element. */
+  color:white;
+  background: rgba(0,0, 0, 0.5);
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+.driver-text-desk>div{
+  margin:3em; 
+}
+.driver-text-desk>div>h3{
+ 
+  font-size: 2em;
+  margin:0.5rem;
+}
+.driver-text-desk>div>p{
+ 
+  font-size: 1.8em;
+  margin:0.5rem;
+}
+.driver-text-desk>div>button{
+  
+  font-size: 1.6em;
+  margin:0.5rem;
+}
+/* .conduce{
+  width: 100%;
+  height: 100%;
+} */
+#button-driver-desk{
+  background-color: #f7b617;
+  color:white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 1em;
+}
+
+
+.rates-desk{   
+  background-color: #f7b617;
+  color:white;
+  height: 100vh;
+ /*  display: flex;
+  justify-content: center;
+  align-items: center; */
+  padding:3em;
+}    
+.container-desk{
+  width: 50vw;
+  height:100%;
+  padding: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.container-desk-text{
+  width: 85%;
+} 
+.container-desk-text>h2{
+  font-size:2.5em;
+  margin: 0.5em 0em 0.5em 0em;
+} 
+.container-desk-text>p{
+  font-size: 1.5em;
+  
+} 
+#button-rates-desk{
+background-color: white;
+color: black;
+border: none;
+border-radius: 5px;
+padding:10px 25px;
+font-weight: bold;
+margin: 20px;
+}
+.container-inputs-desk{
+flex-direction: column;
+display: flex;
+align-items: center;
+flex-wrap: wrap;
+width: 85%;
+}
+
+.container-inputs-desk > div{
+/* background-color: red; */
+display: flex;
+align-items: center;
+margin:1em; 
+width: 100%;
+} 
+.input-desk{
+border-radius:5px;
+border: solid 1px white;
+background-color: #f7b617;
+width: 100%;
+padding:10px;
+margin: 10px;
+font-size:1.5em;
+}
+.input-desk::placeholder {
+color:white;
+}
+
+.footer-desk{
+  padding: 2rem 0.5rem 2rem 0.5rem;
+  background-color:  #2b2b2b ;
+  color: white;
+} 
+/* .footer-desk>div{
+  margin: 0rem 1rem 0rem 1rem;
+} */
+.footer-info-desk{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+ padding: 2em;
+}
+.one-section{
+  display: flex;
+  align-items: flex-end;
+  margin:1em;
+}
+.second-section>p, .three-section>p{
+  margin:1em;
+  font-size: 1.3em;
+}
+.four-section{
+  display: flex;
+  align-items: flex-end;
+  margin:1em;
+  flex-direction: column-reverse;
+}
+.four-section>img{
+  width: 50%;
+  margin: 1.5em;
+}
+.footer-desk>p{
+   display:flex;
+   justify-content: center;
+   margin:2em;
+   font-size: 1.3em;
+ 
+}
+} 
