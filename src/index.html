@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lab&lt;ar</title>
+    <link rel="stylesheet" href="fonts/style.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQQn_PJV-08K-88MZzU-FwXis7UleC380&callback=initMap"></script>
+</head>
+
+<body id="body">
+    <main class="container">
+        <main id="login-modal" class="login-modal">
+            <div class="log-cont-modal">
+                <box class="header-log-modal">
+                    <a class="close-log-modal" href="#">X</a>
+                    <figure class="box-imglog">
+                        <img class="img-log" src="img-log.png" alt="silueta de persona">
+                    </figure>
+                </box>
+                <section class="main-log-modal">
+                    <box class="cont-log">
+                        <box class="box-usr-nam-log">
+                            <figure class="img-usr-log">
+                                <img src="img-usr-log.png" alt="Silueta de persona">
+                            </figure>
+                            <box class="inp-usr-log">
+                                <input type="text" placeholder="Username">
+                            </box>
+                        </box>
+                        <box class="box-psw-log">
+                            <figure class="img-psw-log">
+                                <img src="img-psw-log.png" alt="Candado">
+                            </figure>
+                            <box class="inp-psw-log">
+                                <input type="text" placeholder="Username">
+                            </box>
+                        </box>
+                        <a class="btn-log" href="#">LOG IN</a>
+                        <box class="box-fgtpsw-log">
+                            <p>Forgot password?</p>
+                            <a href="#">Click Here</a>
+                        </box>
+                    </box>
+
+                </section>
+            </div>
+        </main>
+
+        <main id="container-register-modal">
+            <main class="register-modal-content">
+                <box class="close-modal">
+                    <a href="#">X</a>
+                </box>
+                <header class="header-register-modal">
+                    <box>
+                        <p>¿Ya tienes una cuenta?</p>
+                    </box>
+                    <p>O crea una cuenta nueva</p>
+                </header>
+                <main>
+                    <box class="inputs-row">
+                        <input id="name-register" type="text" placeholder="Nombre">
+                        <input id="last-name-register" type="text" placeholder="Apellido">
+                    </box>
+                    <box id="inpunts-column">
+                        <input id="mail-register" type="text" placeholder="Correo electrónico: ejemplo@correo.mx">
+                        <input id="tele-register" type="text" placeholder="Teléfono">
+                        <input id="pwd-register" type="text" placeholder="Contraseña">
+                        <input id="city-register" type="text" placeholder="Ciudad">
+                        <input id="invitation-code" type="text" placeholder="(Opcional) Código de Invitación">
+                        <select name="select-how" id="howyouknow">
+                                <option value="">Cómo te enteraste de nosotros</option>
+                                <option value="redes-sociales">Redes Sociales</option>
+                                <option value="internet">Internet</option>
+                                <option value="medios">Televisión</option>
+                            </select>
+                        <button id="submit-register">ENVIAR</button>
+                    </box>
+                </main>
+            </main>
+        </main>
+
+
+
+
+        <header class="body-header">
+            <nav>
+                <div class="burguer" id="burguer-box">
+                    <span>&#9776;</span>
+                </div>
+                <figure class="logo">
+                    <img src="logo.png" alt="Logo Labcar">
+                </figure>
+                <section class="menu" id="menu-nav">
+                    <a href="#">Viaja</a>
+                    <a href="#">Conduce</a>
+                    <a href="#login-modal">Inicia Sesión</a>
+                </section>
+
+
+            </nav>
+        </header>
+        <section class="hero" id="section-hero">
+            <main class="main-hero-desktop" id="main-hero-desktop">
+                <header class="hero-header">
+                    <h1>Disfruta del viaje <br> Eres dueño de tu tiempo</h1>
+                </header>
+                <main class="hero-main">
+                    <section class="hero-section1">
+                        <box class="hero-sub">
+                            <p>Viaja con</p>
+                        </box>
+                        <figure class="hero-logo">
+                            <img src="logo-blanco.png" alt="Logo Labcar">
+                        </figure>
+                    </section>
+                    <section class="hero-section2">
+                        <box class="hero-cta1">
+                            <a href="#container-register-modal">REGÍSTRATE</a>
+                        </box>
+                        <box class="hero-cta2">
+                            <p>___________ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; O BIEN &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ___________</p>
+                        </box>
+                        <box class="button-driver-hero">
+                            <a href="#">Conviértete en conductor</a>
+                        </box>
+                    </section>
+
+                </main>
+            </main>
+
+            <main class="main-hero-mobile" id="main-hero-mobile">
+                <header class="hero-header-mobile">
+                    <h1>Comienza a viajar</h1>
+                    <figure class="hero-logo-mobile">
+                        <p>con</p>
+                        <img src="logo-blanco.png" alt="Logo Labcar">
+                    </figure>
+                </header>
+                <main class="hero-main-mobile">
+                    <box class="box-button-dd-app-hero">
+                        <button class="button-dd-app-hero" id="button-dd-app-hero">Descarga el app</button>
+                    </box>
+                </main>
+            </main>
+        </section>
+
+        <section class="information" id="section-information">
+            <main class="main-info-desktop">
+                <section class="box-info-desktop">
+                    <figure class="img-info-desktop">
+                        <img src="celular.png" alt="celular">
+                    </figure>
+                    <article class="txt-info-desktop">
+                        <box class="title-txt-info-desktop">
+                            <h2>Descarga la nueva app</h2>
+                        </box>
+                        <box class="txt-info-p1-desktop">
+                            <p>La versión actualizada de LabCar está llena de nuevas funciones para llegar a donde quieras aún más fácil y rápido.</p>
+                        </box>
+                        <box class="txt-info-p2-desktop">
+                            <p>Con solo tocar un botón, un auto llega justo a tu ubicación. Súbete y no te preocupes: tu conductor sabe exactamente a dónde ir.</p>
+                        </box>
+                    </article>
+                </section>
+            </main>
+            <main class="main-info-mobile">
+                <section class="box-info-mobile">
+                    <article class="txt-info-mobile">
+                        <box class="title-txt-info-mobile">
+                            <h2>La nueva app</h2>
+                        </box>
+                        <figure id="box-cel">
+                            <img src="celular.png" alt="celular">
+                        </figure>
+                        <box class="txt-info-p1-mobile">
+                            <p>Llega a tu destino aún más rápido</p>
+                        </box>
+                    </article>
+                </section>
+            </main>
+        </section>
+        <section class="driver" id="section-driver">
+            <main class="main-driver-desktop" id="main-driver-desktop">
+                <section class="box-driver-desktop">
+                    <box class="title-txt-driver-mobile">
+                        <h2>Conduce cuando quieras</h2>
+                    </box>
+                    <br><br>
+                    <box class="txt-driver-p-desktop">
+                        <p>LabCar es una opción flexible para alcanzar tus metas financieras.</p>
+                    </box>
+                    <br><br>
+                    <box>
+                        <button class="button-driver-driver">Conviértete en conductor</button>
+                    </box>
+                </section>
+
+            </main>
+        </section>
+        <section class="rates" id="section-rates">
+            <main id="m-rates-desk" class="main-rates-desktop desk">
+                <section class="box-rates-desktop">
+                    <header class="header-rates-desktop">
+                        <h2>Tarifas</h2>
+                    </header>
+                    <box class="txt-rates-desktop">
+                        <p>Consulta las tarifas LabCar aquí</p>
+                    </box>
+                    <box class="input-rates-desktop">
+                        <span><img src="circulo.png" alt="circulo"></span> <input type="text" placeholder="Ingrese punto de partida">
+                        <br>
+                        <br>
+                    </box>
+                    <box class="input-rates-desktop">
+                        <span><img src="flecha.png" alt="flecha"></span> <input type="text" placeholder="Ingrese un destino">
+                    </box>
+                    <br>
+                    <br>
+                    <box class="button-rates">
+                        <button class="button-route-desktop" id="button-route">¡TRAZAR RUTA!</button>
+                    </box>
+                </section>
+                <section class="box-map-rates-desktop">
+                    <main class="map-desktop" id="map-desktop">
+                        <h1></h1>
+                        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d120406.8967538684!2d-99.1394494!3d19.4246936!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2smx!4v1563631675441!5m2!1ses!2smx" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe> -->
+                    </main>
+                </section>
+            </main>
+            <main id="m-rates-mob" class="main-rates-mobile">
+                <section class="box-rates-mobile">
+                    <header class="header-rates-mobile">
+                        <h2>Tarifas</h2>
+                    </header>
+                    <box class="txt-rates-mobile">
+                        <p>Consulta las tarifas LabCar aquí</p>
+                    </box>
+                    <box class="input-rates-mobile">
+                        <span><img src="circulo.png" alt="circulo"></span> <input type="text" placeholder="Ingrese punto de partida">
+                        <br>
+                        <br>
+                    </box>
+                    <box class="input-rates-mobile">
+                        <span><img src="flecha.png" alt="flecha"></span> <input type="text" placeholder="Ingrese un destino">
+                    </box>
+
+                    <box class="button-rates-mobile">
+                        <button class="button-route-mobile" id="button-route">¡TRAZAR RUTA!</button>
+                    </box>
+                </section>
+                <section class="box-map-rates-mobile">
+                    <main class="map-mobile" id="map-mobile">
+                        <h1></h1>
+                        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d120406.8967538684!2d-99.1394494!3d19.4246936!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2smx!4v1563631675441!5m2!1ses!2smx" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe> -->
+                    </main>
+                </section>
+            </main>
+        </section>
+
+        <footer class="section-footer" id="footer">
+            <main class="main-footer-desktop" id="main-footer-desktop">
+                <figure class="header-footer-desktop">
+                    <img class="logo-footer-desktop" src="logo-blanco.png" alt="Logo-Labcar">
+                </figure>
+                <main class="cont-footer-desktop">
+                    <box class="box-social-media-desktop">
+                        <a href="#"><span class="icon icon-facebook"></span></a>
+                        <a href="#"><span class="icon icon-twitter"></span></a>
+                        <a href="#"><span class="icon icon-linkedin2"></span></a>
+                        <a href="#"><span class="icon icon-appleinc"></span></a>
+                        <a href="#"><span class="icon icon-play3"></span></a>
+                    </box>
+                    <box class="links-footer-desktop">
+                        <a href="#">Viaja</a>
+                        <a href="#">Conduce</a>
+                        <a href="#">Ciudades</a>
+                        <a href="#">Tarifas</a>
+                        <a href="#">Entregas</a>
+                        <a href="#">Cómo funciona</a>
+                        <a href="#">Países</a>
+                        <a href="#">Seguridad</a>
+                    </box>
+                    <box class="links-footer2-desktop">
+                        <a href="#">Oportunidades</a>
+                        <a href="#">Nuestra Historia</a>
+                        <a href="#">API de LabCar</a>
+                        <a href="#">Eventos</a>
+                        <a href="#">Desarrolladores</a>
+                        <a href="#">Servicios</a>
+                        <a href="#">Laboratoria</a>
+                        <a href="#">Coders</a>
+                    </box>
+                    <box class="box-stores-desktop">
+                        <figure class="store-box"><img class="app-store" src="app-store.png" alt="Logo App Store"></figure>
+                        <figure class="store-box"><img class="play-store" src="google-play.png" alt="Logo Google Play"></figure>
+                    </box>
+                </main>
+                <footer class="footer-footer-desktop">
+                    <box class="copyright-box-desktop">
+                        <p><span class="sym-copy">&copy</span> 2017 LabCar technologies Inc.</p>
+                    </box>
+                </footer>
+            </main>
+        </footer>
+
+
+
+    </main>
+
+
+    <script type="text/javascript" src="main.js"></script>
+
+</body>
+
+</html>
