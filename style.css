@@ -1,0 +1,612 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+	background: #fff;
+	color: #000;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+}
+
+@media only screen and (min-width: 600px) { /* estilos desktop */
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+} 
+/* fin modal */
+.root {
+	width: 100%;
+	max-width: 1000px;
+	margin: 0% auto;
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: repeat(6, auto);
+  grid-template-areas:  "header header header header header header"
+                        "hero hero hero hero hero hero"
+                        "app app app app app app"
+                        "conduce conduce conduce conduce conduce conduce"
+                        "tarifas tarifas tarifas tarifas tarifas tarifas"
+                        "footer footer footer footer footer footer";
+}
+
+.root .header-desktop {
+  grid-area: header;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: "logo menu";
+  padding: 2%;
+}
+
+.root .header-desktop figure {
+  grid-area: logo;
+  padding-left: 10%;
+}
+
+.root .header-desktop ul {
+  grid-area: menu;
+  text-align: center;
+}
+.root .header-desktop ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 2%;
+}
+
+.root .hero-desktop {
+  grid-area: hero;
+  background: url(img/taxi.jpg);
+  background-size: cover;
+  background-position: bottom;
+  width: 100%;
+  height: 500px;
+  display: grid; 
+  grid-template-columns: repeat(2,30%) 40%;
+  grid-template-rows: repeat(4,25%);
+}
+.root .hero-desktop .side-box-desktop {
+  display: block;
+  grid-column: 3 / 4;
+  grid-row: 2 / 4;
+  background: #f7b617;
+  padding: 5%;
+  color: #fff;
+}
+
+.root .hero-desktop .side-box-desktop h4 {
+  padding: 3% 0%;
+}
+
+.root .hero-desktop .side-box-desktop button {
+  color: #000;
+  font-size: 11pt;
+  background: #fff;
+  width: 30%;
+  height: 15%;
+  border-radius: 5px;
+  border: none;
+  padding: 1%;
+  margin: 1% 0%;
+}
+
+.root .hero-desktop .side-box-desktop .lines {
+  display: grid;
+  align-items: center;
+  text-align: center;
+  margin: 2%;
+  grid-template-columns: repeat(3, 33%);
+  grid-template-areas: "hr-l h5 hr-r";
+}
+
+.root .hero-desktop .side-box-desktop h5 {
+  grid-area: h5;
+}
+
+.root .hero-desktop .side-box-desktop .line-left {
+  grid-area: hr-l;
+  height: .5%;
+}
+
+.root .hero-desktop .side-box-desktop .line-right {
+  grid-area: hr-r;
+  height: .5%;  
+}
+
+.root .hero-desktop .side-box-desktop button#driver {
+  width: 60%;
+}
+
+.root .app-desktop {
+  grid-area: app;
+  background: #f7b617;;
+  color: #fff;
+  padding: 3% 20% 3% 0%;
+}
+
+.root .app-desktop .border{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: "img txt";
+  border-style: solid solid solid none;
+  border-color: #fff;
+  border-width: 1px;
+  padding: 4%;
+  align-items: center;
+}
+
+.root .app-desktop .border figure {
+  grid-area: img;
+  padding-left: 10%;
+}
+
+/* .root .app-desktop .border figure .img-small { */
+.root .img-small {
+  width: 80%;
+}
+
+.root .app-desktop .border .text {
+  grid-area: txt;
+  width: 80%;
+}
+
+.root .app-desktop .border h3, p {
+  margin: 2%;
+  margin-bottom: 5%;
+}
+
+.root .conduce-desktop {
+  grid-area: conduce;
+  background: url(img/conduce.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 350px;
+  display: grid; 
+  grid-template-columns: 65% 35%;
+  grid-template-areas: "none conviertete";
+}
+
+.root .conduce-desktop .conduce-side {
+  grid-area: conviertete;
+  color: #fff;
+  background-color:rgba(0,0,0,0.4);
+  padding: 20% 0% 20% 8%;
+}
+.root .conduce-desktop .conduce-side p, button, #h3-conduce {
+  margin-bottom: 3%;
+}
+
+.root .conduce-desktop .conduce-side p {
+  font-size: 14px;
+}
+.root .conduce-desktop .conduce-side button#conduce {
+  color: #fff;
+  font-size: 11pt;
+  background: #f7b617;
+  width: 65%;
+  height: 15%;
+  border-radius: 5px;
+  border: none;
+  padding: 1%;
+}
+
+.root .tarifas-desktop {
+  grid-area: tarifas;
+  display: grid;
+  background: #f7b617;
+  padding: 5% 7%;
+  color: #fff;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: "consulta mapa";
+}
+
+.root .tarifas-desktop .consulta {
+  grid-area: consulta;
+}
+
+.root .tarifas-desktop .mapa {
+  grid-area: mapa;
+  text-align: center;
+}
+
+.root .tarifas-desktop .mapa #mapa{
+  border-style: solid;
+  border-color: #fff;
+  border-width: 1px;
+  padding: 1%;
+}
+
+.root .tarifas-desktop .consulta .p-ruta button {
+  color: #000;
+  font-size: 8pt;
+  background: #fff;
+  width: 30%;
+  height: 30px;
+  border-radius: 2px;
+  border: none;
+}
+
+.root .tarifas-desktop .consulta h3, p, .input {
+  margin: 0% 0% 3% 0%;
+}
+
+.root .tarifas-desktop .consulta .p-ruta {
+  text-align: center;
+}
+
+.root .tarifas-desktop .consulta .input input{
+  color: #fff;
+  text-decoration-color: #fff;
+  font-size: 9pt;
+  background: #f7b617;
+  width: 70%;
+  border-radius: 7px;
+  border: solid;
+  border-width: 1px;
+  margin-left: 4%;
+  padding: 2%
+}
+
+.root .footer-desktop {
+  grid-area: footer;
+  background: #2b2b2b;
+  grid-template-columns: repeat(4,25%);
+  grid-template-rows: 15% 70% 15%;
+  grid-template-areas: "header header header header"
+                       "main-footer main-footer main-footer main-footer"
+                       "foot foot foot foot";
+  color: white; 
+  /* height: 400px; */
+  padding: 7%;
+}
+
+.root .footer-desktop .header-footer {
+  grid-area: header;
+  border-style: none none solid none;
+  border-color: #fff;
+  border-width: 1px;
+  padding-bottom: 1%;
+}
+
+.root .footer-desktop .header-footer #logo{
+  width: 90px;
+  height: 20px;
+}
+
+.root .footer-desktop .main-footer {
+  grid-area: main-footer;
+  display: grid;
+  grid-template-columns: repeat(4,25%);
+  grid-template-areas: "social links1 links2 stores";
+  font-size: 12px;
+  height: 200px;
+  padding: 2% 0%;
+}
+
+.root .footer-desktop .main-footer ul {
+  list-style: none;
+}
+
+.root .footer-desktop .main-footer .social {
+  grid-area: social;
+  align-self: flex-end;
+}
+
+.root .footer-desktop .main-footer .social ul {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.root .footer-desktop .main-footer .links1 {
+  grid-area: links1;
+  align-self: center;
+}
+
+/* .root .footer-desktop .main-footer .links1 ul {
+  justify-content: space-between;
+  height: 100%;
+} */
+
+.root .footer-desktop .main-footer .links2 {
+  grid-area: links2;
+  align-self: center;
+}
+.root .footer-desktop .main-footer .stores {
+  grid-area: stores;
+  display: flex;
+  align-items: flex-end;
+}
+
+.root .footer-desktop .footer-footer{
+  grid-area: foot;
+  font-size: 11px;
+  border-style: solid none none none;
+  border-color: #fff;
+  border-width: 1px;
+  padding-top: 2%;
+}
+/*   **** oculta partes en desktop ****   */
+.root .app-desktop .border h2{
+  display: none;
+}
+.root .app-desktop h4{
+  display: none;
+}
+.root .side-box, .header{
+  display: none;
+}
+}
+
+@media only screen and (max-width: 600px) { /* estilos mobile */
+  .root {
+    width: 100%;
+    margin: 0% auto;
+    padding: 0%;
+    display: grid;
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas:  "header"
+                          "hero"
+                          "app"
+                          "conduce"
+                          "tarifas"
+                          "footer";
+  }
+.root .header {
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 7% 93%;
+    grid-template-areas: "boton logo";
+    padding: 2%;
+}
+.root .header button {
+  grid-area: boton;
+}
+.root .header figure {
+  grid-area: logo;
+  padding-left: 2%;
+  width: 15%;
+}
+.root .hero {
+  grid-area: hero;
+  background: url(img/taxi.jpg);
+  background-size: cover;
+  background-position: bottom;
+  /* max-width: 600px; */
+  height: 400px;
+  display: grid; 
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: repeat(4,25%);
+}
+.root .hero .side-box {
+  display: block;
+  grid-column: 2 / 5;
+  grid-row: 2 / 4;
+  background: #f7b617;
+  padding: 5% 0% 5% 5%;
+  color: #fff;
+}
+.root .hero .side-box button {
+  color: #000;
+  font-size: 12pt;
+  background: #fff;
+  width: 50%;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  margin-top: 5%;
+}
+.root .app-desktop {
+  grid-area: app;
+  background: #f7b617;;
+  color: #fff;
+  padding: 10% 5% 5%;
+  display: block;
+}
+.root .app-desktop .border{
+  border-style: solid;
+  border-color: #fff;
+  border-width: 1px;
+  padding: 4%;
+  margin-bottom: 15%;
+  text-align: center;
+  }
+.root .app-desktop .border #celular{
+  height: 250px;
+}
+  .root .conduce-desktop {
+  grid-area: conduce;
+  background: url(img/conduce.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  
+}
+.root .conduce-desktop .conduce-side {
+  color: #fff;
+  background-color:rgba(0,0,0,0.4);
+  padding: 10%;
+}
+.root .conduce-desktop .conduce-side p, button, #h3-conduce {
+  margin-bottom: 1%;
+}
+.root .conduce-desktop .conduce-side p {
+  font-size: 16px;
+}
+.root .conduce-desktop .conduce-side button#conduce {
+  color: #fff;
+  font-size: 12pt;
+  font-weight: bold;
+  background: #f7b617;
+  width: 45%;
+  border-radius: 5px;
+  border: none;
+  padding: 2%;
+}
+.root .tarifas-desktop {
+  grid-area: tarifas;
+  display: block;
+  background: #f7b617;
+  padding: 5% 7%;
+  color: #fff; 
+}
+.root .tarifas-desktop .mapa {
+  text-align: center;
+}
+.root .tarifas-desktop .mapa #mapa{
+  border-style: solid;
+  border-color: #fff;
+  border-width: 1px;
+  padding: 1%;
+  width: 75%;
+}
+.root .tarifas-desktop .consulta{
+  margin-bottom: 10%;
+}
+.root .tarifas-desktop .consulta .p-ruta button {
+  color: #000;
+  font-size: 8pt;
+  background: #fff;
+  width: 30%;
+  height: 30px;
+  border-radius: 2px;
+  border: none;
+}
+.root .tarifas-desktop .consulta h3, p, .input {
+  margin: 0% 0% 3% 0%;
+}
+.root .tarifas-desktop .consulta .p-ruta {
+  text-align: center;
+}
+.root .tarifas-desktop .consulta .input input{
+  color: #fff;
+  text-decoration-color: #fff;
+  font-size: 9pt;
+  background: #f7b617;
+  width: 40%;
+  border-radius: 7px;
+  border: solid;
+  border-width: 1px;
+  margin-left: 2%;
+  padding: 2%
+}
+.root .footer-desktop {
+  grid-area: footer;
+  background: #2b2b2b;
+  grid-template-columns: repeat(2,50%);
+  grid-template-rows: 15% 70% 15%;
+  grid-template-areas: "header header"
+                       "main-footer main-footer"
+                       "foot foot ";
+  color: white; 
+  height: 300px;
+  padding: 3%;
+}
+.root .footer-desktop .header-footer {
+  grid-area: header;
+  border-style: none none solid none;
+  border-color: #fff;
+  border-width: 1px;
+  padding-bottom: 1%;
+}
+.root .footer-desktop .header-footer #logo{
+  width: 90px;
+  height: 20px;
+}
+.root .footer-desktop .main-footer {
+  grid-area: main-footer;
+  display: grid;
+  grid-template-columns: repeat(2,50%);
+  grid-template-areas: "links1 i-stores";
+  font-size: 12px;
+  height: 175px;
+  padding: 2% 0%;
+}
+.root .footer-desktop .main-footer .links1 {
+  grid-area: links1;
+}
+.root .footer-desktop .main-footer ul {
+  list-style: none;
+}
+
+.root .footer-desktop .main-footer .social {
+  grid-area: i-stores;
+  display: block;
+}
+
+.root .footer-desktop .main-footer .social ul {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.root .footer-desktop .main-footer .stores {
+  grid-area: i-stores;
+  display: block;
+  padding-top: 20%;
+}
+.root .footer-desktop .main-footer .stores #app-store, #play-store{
+  width: 100px;
+}
+
+.root .footer-desktop .footer-footer{
+  grid-area: foot;
+  font-size: 11px;
+  border-style: solid none none none;
+  border-color: #fff;
+  border-width: 1px;
+  padding-top: 2%;
+}
+
+
+/*   **** oculta partes en mobile****   */
+.root .header-desktop {
+  display: none;
+  }
+.root .hero-desktop .side-box-desktop {
+  display: none;
+  }
+.root .app-desktop .border .text {
+  display: none;
+  }
+.root .footer-desktop .main-footer .links2{
+  display: none;
+}
+}
