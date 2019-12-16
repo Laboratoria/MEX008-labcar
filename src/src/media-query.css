@@ -1,0 +1,430 @@
+@media (max-width: 768px) {
+    *{
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+    }
+    
+    body{
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+    }
+
+    /* Sección navbar */
+    .header{
+        box-sizing: border-box;
+        display: flex;  
+        padding: 2%; 
+        justify-content: flex-start;    
+        align-items: center; 
+        background: white;       
+        width: 100vw;
+        height: 10vh;
+        }
+
+    .logo{
+        box-sizing: border-box;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    #menu-app{
+        box-sizing: border-box;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        height: 60%;
+        top:0%;
+    }
+
+    .menu-app{
+        background-color: white;
+        bottom: 0%;
+        left: 0%;
+        overflow-y: scroll;
+        position: fixed;
+        transform: translate3d(0px, -100%, 0px);
+        transition: transform 0.35s cubic-bezier(0.05, 1.04, 0.72, 0.98) 0s;
+        z-index: 1001;
+    }
+
+    .main-hamburger{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        box-sizing: border-box;
+        background-color: whitesmoke;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 15%;
+        padding: 1% 1%;
+        -webkit-transition:-webkit-transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+        transition: transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+        z-index:1002;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        border-radius: 5px;
+    }
+
+    .main-hamburger.is-active{
+        background-color: none;
+    }
+
+    [class^="layer-"]{
+        display: flex;
+        align-items: center;  
+        background: grey;
+        margin-bottom: 10%;
+        border-radius: 2px;
+        width: 100%;
+        height: 10%;
+        opacity: 1;
+        -webkit-transform:translate3d(0, 0, 0);
+	    transform:translate3d(0, 0, 0);
+	    -webkit-transition:all 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+	    transition:all 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+    }
+
+    .logo{
+        box-sizing: border-box;
+        display: flex;
+        width: 60%;
+        height: 100%;
+    }
+
+    .main-hamburger:hover .-top{
+        -webkit-transform:translateY(-100%);
+	    -ms-transform:translateY(-100%);
+	    transform:translateY(-100%);
+    }
+
+    .main-hamburger:hover .-bottom{
+        -webkit-transform:translateY(100%);
+	    -ms-transform:translateY(100%);
+	    transform:translateY(100%);
+    }
+
+    .main-hamburger.is-active .-top{
+        -webkit-transform:translateY(200%) rotate(45deg) !important;
+	    -ms-transform:translateY(200%) rotate(45deg) !important;
+	    transform:translateY(200%) rotate(45deg) !important;
+    }
+
+    .main-hamburger.is-active .-mid{
+        opacity:0;
+    }
+
+    .main-hamburger.is-active .-bottom{
+        -webkit-transform:translateY(-200%) rotate(135deg) !important;
+        -ms-transform:translateY(-200%) rotate(135deg) !important;
+        transform:translateY(-200%) rotate(135deg) !important;
+    }
+
+    .menu-app.is_active{
+        transform: translate3d(0px, 0px, 0px);
+    }
+
+    .menu-app ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin:0%;
+        padding: 0%;
+    }
+
+    .menu-app ul li{
+        text-align: r;
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+        font-size: 10vw;
+        line-height: 1vw;
+        height: 2vw;
+        text-transform: none;
+        font-weight: bold;
+    }
+
+    .menu-app ul li a{
+        text-decoration: none;
+        color: black;
+    }
+
+    .menu-app ul li a :hover{
+        text-decoration: none;
+        color: black;
+    }
+
+    .modal-session{
+        display: flex;
+        visibility: collapse;
+    }
+    /* Sección Hero */
+    .hero{
+        display:flex;
+        background: url(../labcar/img/taxi.jpg);
+        background-size: cover;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100vmax;
+        height: 90vmin;
+    }
+
+    #hero-text{
+        display: none;
+        visibility: collapse
+    } 
+
+    #hero-mobile{
+        visibility: visible;
+        box-sizing: border-box;
+        display: flex;
+        background: #f7b617;
+        padding: 5% 0% 5% 5%;
+        display: flex;  
+        flex-direction: column; 
+        align-items: flex-start;
+        justify-content: space-around;
+        width: 90%;
+        height: 50%;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #img{
+        position:relative;
+    }
+
+    #paragraph{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 10vw;
+        color: white;
+    }
+
+    #reg-mobile{
+        display: flex;
+        justify-content: center;
+        width: 50%;
+        height: 15%;
+        font-size: 5vw;
+        border-radius: 5px;
+        border: none;
+        background: white;
+    }
+
+    /* Section Information */
+    #information{
+        display: flex;
+        background-color: #f7b617;
+        flex-direction: column;
+        width: 100vw;
+        height: 80vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #information-container{
+        display: flex;
+        align-items: flex-end;
+        box-sizing: border-box;
+        background: #f7b617;
+        border: solid white 2px;
+        width: 90%;
+        height: 70%;
+    }
+
+    #information-img{
+        box-sizing: border-box;
+        visibility: visible;
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+        padding: 5% 10% 5% 10%;
+        width: 100%;
+        height: 100%;
+    }
+
+    #h2-inf{
+        visibility: visible;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 5vw;
+        width: 100%;
+        height: 10%;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+    }
+
+    #image-inf{
+        display: flex;
+        width: 90%;
+        height: 90%;
+    }
+
+    #texto{
+        visibility: visible;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 80%;
+        height:10%;
+    }
+
+    .pharagraph-inf-b{
+        font-size: 4vw;
+    }
+
+    #information-text{
+       display: none;
+       visibility: collapse;
+    }
+
+    /* Section conductor */
+
+    #section-conductor{
+        display: flex;
+        background: url(../labcar/img/conduce.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        justify-content: flex-end;
+        width: 100vw;
+        height: 60vh;
+    }
+
+    #conductor-text{
+        display: flex;
+        box-sizing: border-box;
+        padding: 15% 5% 0% 5%;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        background: rgb(35,35,36, 0.3);
+        width: 100%;
+        height: 100%;
+        font-size: 5vw;
+    }
+
+    .h4{
+        font-size: 6vw;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .pharagraph-conductor{
+        font-size: 5vw;
+    }
+
+    #button-conductor{
+        font-size: 4vw;
+    }
+
+    /* Sección Tarifa */
+    #section-tarifa{
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    #tarifas{
+        box-sizing: border-box;
+        display: flex;
+        width: 100%;
+        height: 50%;
+    }
+
+    #tarifa-text{
+        box-sizing: border-box;
+        padding: 0% 2% 0% 2%;
+        display: flex;
+        width: 100%;
+        height: 25%;
+    }
+
+    #show-map{
+        box-sizing: border-box;
+        display: flex;
+        width: 80%;
+        height: 40%;
+        border: solid white 2px;
+    }
+
+    #h5{
+        font-size: 7vw;
+    }
+
+    #pharagraph-tarifa{
+        font-size: 5vw;
+    }
+
+    #button-ruta, #direccion, #destino{
+        font-size: 5vw;
+    }
+
+    /* Seccion Footer */
+    #column-two{
+        display: none;
+        visibility: collapse;
+    }
+
+    #column-one{
+        display: flex;
+        order:-1;
+        width: 50%;
+        height: 100%;
+    }
+
+    #column-one ul li{
+        font-size: 2vw;       
+    }
+
+    #icon-foot{
+        box-sizing: border-box;
+        display: flex;
+        position: relative;
+        left: 25%;
+        width: 50%;
+        height: 30%;
+        align-items: flex-start;
+        align-self: flex-start;
+        padding: padding: 2% 0% 2% 0;        
+    }
+
+    #icon-foot span{
+        font-size: 4vw;
+    }
+
+    #app-store{
+        box-sizing: border-box;
+        display: flex;
+        width: 50%;
+        height: 50%;
+        position: relative;
+        bottom: 30%;
+        right: 9%;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    #foot-right{
+        display: flex;
+        justify-content: flex-start;
+    }
+    #foot-right p{
+        font-size: 3vw;
+    }
+}

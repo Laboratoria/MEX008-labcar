@@ -1,0 +1,693 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+header{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: white;
+    width: 100vw;
+    height: 10vh;
+}
+
+.logo{
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+}
+
+.menu-app{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end;
+    align-self: center;
+    width: 100%;
+    height: 100%;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0%;
+    margin-bottom: 0.5em;
+    margin-right: 0.5em;
+    display: flex;
+    flex-direction: row;  
+    align-items: center;    
+}
+
+ul li{
+    padding: 1em;
+    font-size: 2vw;
+}
+
+ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+img{
+    position: relative;
+    left: 5%;
+} 
+
+.modal-session{
+    display: none;
+    visibility: collapse;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 30vmax;
+    height: 70vmin;
+    background: #23ac98; 
+    border-radius: 5px; 
+    position: absolute;
+    z-index: 1;
+}
+
+.span-close{
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    width: 5%;
+    height: 5%;
+    align-self: flex-end;
+    background: rgb(175, 40, 19, 0.5);
+    border-radius: 15px;
+    position: relative;
+    top: 1%;
+    right: 1%;
+}
+
+.span-close span{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5vw;
+}
+
+.avatar{
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0%;
+    justify-content: center;
+    width: 100%;
+    height: 40%;
+    position: relative;
+    bottom: 5%;
+}
+
+.avatar img{
+    display: flex;
+    width: 40%;
+    border-radius: 50px;
+}
+
+.modal-session hr{
+    display: flex;
+    width: 100%;
+    size: 10px;
+    position: relative;
+    bottom: 5%
+}
+
+.date-users{
+    display: flex;
+    box-sizing: border-box;
+    border-radius: 15px;
+    width: 70%;
+    height: 45%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background:#e5ecec;
+    position: relative;
+    bottom: 5%;
+}
+
+.users, .password{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    width: 90%;
+    height: 15%;
+}
+.users span, .password span{
+    font-size: 1.5vw;
+}
+.users input, .password input{
+    width: 90%;
+    height: 80%;
+    border-radius: 10px;
+    font-size: 1vw;
+}
+
+.logging{
+    width: 50%;
+    height: 15%;
+    border-radius: 10px;
+    background: #f7b617;
+    font-size: 1.5vw;
+}
+.date-users p{
+    font-size: 1.5vw;
+    color: black;
+}
+
+.date-users p a{
+    text-decoration: none;
+    color: #ac1908;
+}
+
+.hero{
+    display:flex;
+    background: url(../labcar/img/taxi.jpg);
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100vw;
+    height: 90vh;
+}
+
+.hero-text{
+    box-sizing: border-box;
+    background: #f7b617;
+    padding: 3%;
+    display: flex;  
+    flex-direction: column; 
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 40vmax;
+    height: 50vmin;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-mobile{
+    display: none;
+    visibility: collapse;
+}
+
+h1, h3, h4, h5{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vw;
+    color: white;
+}
+
+p{
+    font-size: 1.5vw;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+hr{
+    flex: display;
+    align-self: flex-end;
+    color: white;
+    border-color: white;
+    width: 30%;
+    size: 5px;
+}
+
+.box-line{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.registro{
+    width: 30%;
+    height: 10%;
+    font-size: 1vw;
+    border-radius: 5px;
+    border: none;
+}
+
+.modal-reg{
+    display: none;
+    visibility: collapse;
+    box-sizing: border-box;
+    padding: 1%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 30vmax;
+    height: 70vmin;
+    background: gray; 
+    border-radius: 15px;
+    position: absolute;
+    z-index: 1;
+}
+.equis{
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    width: 5%;
+    height: 5%;
+    align-self: flex-end;
+    border-radius: 15px;
+    position: relative;
+    top: 1%;
+    right: 1%;
+}
+.modal-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    height: 10%;
+    background: black;
+}
+.modal-subtitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    height: 10%;
+}
+.reg-name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    height: 10%;
+}
+.date-name{
+    box-sizing: border-box;
+    padding: 1%;
+    display: flex;
+    justify-content: space-around;
+    width:49%;
+    height: 80%;
+}
+.reg-input{
+    box-sizing: border-box;
+    padding: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 95%;
+    height: 70%;
+}
+.register{
+    box-sizing: border-box;
+    padding:1%;
+    display: flex;
+    width: 98%;
+    height: 10%;
+}
+
+#enviar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1vw;
+    background:#319cb2;
+    color: white;
+}
+
+.conductor{
+    width: 40%;
+    height: 10%;
+    font-size: 1vw;
+    border-radius: 5px;
+    border: none;
+}
+
+.information{
+    display: flex;
+    background-color: #f7b617;
+    width: 100vw;
+    height: 80vh;
+    align-items: center;
+}
+
+.information-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-sizing: border-box;
+    background: #f7b617;
+    border: solid white 1px;
+    width: 80%;
+    height: 90%;
+}
+
+.information-img{
+    display:flex;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 80%;
+}
+
+.image-inf{
+    display: flex;
+    height: 100%;
+}
+
+h2{
+    display: none;
+    visibility: collapse;
+}
+
+.texto{
+    display: none;
+    visibility: collapse;
+}
+
+.information-text{
+    display: flex;
+    width: 30%;
+    height: 60%;
+    flex-direction: column;
+    box-sizing: border-box;
+    text-align: left;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1vw;
+}
+
+/* Modal conductor */
+.modal-conductor{
+    display: flex;
+    /* visibility: collapse; */
+    box-sizing: border-box;
+    padding: 0% 1% 1% 1%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 30vmax;
+    height: 70vmin;
+    background: gray; 
+    border-radius: 15px;
+    position: absolute;
+    z-index: 1;
+}
+
+.close-conductor{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end;
+    align-self: flex-end;
+    width: 50%;
+    height: 5%;
+    border: solid yellow 2px;
+}
+
+.div-conductor{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 98%;
+    height: 15%;
+    border: solid yellow 2px;
+}
+
+
+.section-conductor{
+    display: flex;
+    background: url(../labcar/img/conduce.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    justify-content: flex-end;
+    width: 100vw;
+    height: 60vh;
+}
+
+.conductor-text{
+    display: flex;
+    box-sizing: border-box;
+    padding: 3%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background: rgb(35,35,36, 0.3);
+    width: 30%;
+    height: 100%;
+    font-size: 1.2vw;
+}
+
+.button-conductor{
+    width: 70%;
+    height: 10%;
+    font-size: 1.2vw;
+    border-radius: 5px;
+    border: none;
+    background: #f7b617;
+    color: white;
+}
+
+/* Sección Tarifa */
+
+.section-tarifa{
+    box-sizing: border-box;
+    display: flex;
+    width: 100vw;
+    height: 60vh;
+    background: #f7b617;
+    justify-content: space-around;
+    align-items: center ;
+}
+
+.tarifas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: space-around;
+    width: 40%;
+    height: 90%;
+}
+
+.tarifa-text{
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    width: 100%;
+    height: 25%;
+}
+
+[class^="div-"]{
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+    height: 25%;
+}
+
+.img-d{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 10%;
+    height: 100%;
+}
+
+.img-icon{
+    display: flex;
+    box-sizing: border-box;
+    width: 80%;
+    padding: 2% 1% 2% 1%;
+}
+
+.button-tarifa{
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    width: 100%;
+    height: 25%;
+}
+
+[class^="in-"]{
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    width: 70%;
+    height: 60%;
+}
+
+[class^="input-"]{
+    box-sizing: border-box;
+    display: flex;
+    justify-self: flex-end;
+    border: solid white 1px;
+    font-size: 1.5vw;
+    border-radius: 10px;
+    background: 0%;
+    width: 100%;
+    height: 70%;
+}
+
+.button-ruta{
+    width: 50%;
+    height: 50%;
+    font-size: 1.2vw;
+    border-radius: 2px;
+    background: white; 
+    border: none;
+    align-self: flex-start;
+}
+
+
+.show-map{
+    box-sizing: border-box;
+    display: flex;
+    width: 40%;
+    height: 90%;
+    border: solid white 1px;
+}
+
+
+
+footer{
+    box-sizing: border-box;
+    padding: 3%;
+    background: #2b2b2b;
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.foot-line{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 10%;
+}
+
+.foot-column{
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 80%;
+}
+
+.icon-foot{
+    box-sizing: border-box;
+    width: 25%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    padding: 2% 0% 2% 0%;
+    color: white;
+    font-size: 2vw;
+}
+
+.column-one, .column-two{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    padding: 2% 0% 2% 0%;
+    align-items: stretch;
+    width: 25%;
+    height: 100;
+}
+
+#columnO{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+#columnO li{
+    text-align: left;
+    color: white;
+    padding: 5px 0% 5px 0%;
+    font-size: 1.5vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#columnT{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+#columnT li{
+    text-align: left;
+    color: white;
+    padding: 5px 0% 5px 0%;
+    font-size: 1.5vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.app-store{
+    display: flex;
+    box-sizing: border-box;
+    padding: 2% 0% 2% 0%;
+    flex-direction: column;
+    align-self: flex-end;
+    justify-content: flex-end;
+    align-items: flex-start;
+    width: 25%;
+    height: 100;
+}
+
+.app-store img{
+    display: flex;
+    box-sizing: border-box;
+    padding: 2%;
+    width: 50%;
+}
+
+.line-f{
+    flex: display;
+    width: 100%;
+    size: 5px;
+    border-color: white;
+}
+
+.line-fa{
+    flex: display;
+    width: 100%;
+    size: 5px;
+    border-color: white;
+    align-self: flex-start;
+}
+
+.foot-right{
+    box-sizing: border-box;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.foot-right p{
+    display: flex;
+    box-sizing: border-box;
+    font-size: 1vw;
+}
