@@ -1,0 +1,503 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 5% repeat(5,auto);
+    grid-template-rows: repeat(6,auto);
+    grid-template-areas: 
+    "nav-bar nav-bar nav-bar nav-bar nav-bar nav-bar"
+    "app-ad app-ad app-ad app-ad app-ad app-ad"
+    "cel cel cel cel cel cel"
+    "driver driver driver driver driver driver"
+    "fare fare fare fare fare fare"
+    "final final final final final final";
+    margin: 0;
+    padding: 0;
+}
+
+.container .nav-bar{
+    grid-area: nav-bar;
+    margin-bottom: 25px;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.container .nav-bar img{
+    margin-left: 20px;
+    width: 100px;
+    height: auto;
+}
+
+.container .nav-bar .menu-desktop{
+    grid-area: nav-bar;
+    display: grid;
+    grid-template-columns: 20% repeat(5,auto);
+    grid-template-rows: 100%;
+
+}
+
+.container .nav-bar .menu-desktop ul{
+    grid-column-start: 6;
+    grid-column-end: 7;
+}
+
+.container .nav-bar .menu-desktop ul li{
+    list-style: none;
+    display: inline;
+    font-family: 'Gothic A1', sans-serif;
+    padding: 25px;
+    /* margin-left: 80px; */
+}
+
+.container .app-ad{
+    grid-area: app-ad;
+    background: url("https://raw.githubusercontent.com/MontseRV/MEX008-labcar/rama-uno/images/taxi.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% repeat(5,auto);
+    grid-template-rows: repeat(5,auto);
+}
+
+.container .app-ad .ad-yellow{
+    background: #f7b617;
+    color: white;
+    font-family: 'Gothic A1', sans-serif;
+    font-size: 16pt;
+    font-weight: bold;
+    grid-column-start: 2;
+    grid-column-end: 7;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    padding: 10px 20px;
+    margin-bottom: 40px;
+    margin-top: 120px;
+}
+
+.container .app-ad .ad-yellow .yellow-mobile img{
+    height: 15px;
+    width: auto;
+}
+
+.container .app-ad .ad-yellow .yellow-mobile p{
+    margin-bottom: 5px;
+}
+
+.container .app-ad .ad-yellow .yellow-mobile button{
+    margin-top: 20px;
+}
+
+.container .cel{
+    grid-area: cel;
+    background: #f7b617;
+    color: white;
+    font-family: 'Gothic A1', sans-serif;
+    display:grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 90% 10%;
+}
+
+.container .cel .image-cel{
+    grid-column-start: auto;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    padding: 40px 40px 40px 40px;
+    margin: 30px 10px;
+    border: solid white;
+    border-width: 1px;
+}
+
+.container .cel .image-cel .uno{ 
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.container .cel .image-cel img{
+    height: 200px;
+    width: auto;
+}
+
+.container .cel .footer-cel{
+    grid-column-start: auto;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    padding: 10px;
+}
+
+.container .driver{
+    grid-area: driver;
+    background: url("https://raw.githubusercontent.com/MontseRV/MEX008-labcar/rama-uno/images/conduce.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(50,50,50);
+    background-blend-mode: soft-light;
+    height: 350px;
+    width: 100%;
+}
+
+.container .driver .driver-ad{
+    font-size: 1em;
+    color: white;
+    font-family: 'Gothic A1', sans-serif;
+    margin: 30px 0px;
+    padding: 40px;
+}
+
+.container .driver .driver-ad button{
+    background: #f7b617;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.container .fare{
+    grid-area: fare;
+    background: #f7b617;
+    font-family: 'Gothic A1', sans-serif;
+    color: white;
+    padding:40px 10px 25px 10px;
+}
+
+.container .fare h3{
+    padding:25px 5px;
+}
+
+.container .fare  p{
+    padding:15px 5px;
+}
+
+.container .fare img{
+    padding:0px 5px 5px 5px
+}
+
+.container .fare input{
+    background: #f7b617;
+    font-family: 'Gothic A1', sans-serif;
+    color: white;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    border-radius: 5px; 
+    margin-left: 5px;
+}
+
+.container .fare button{
+    border: none;
+    border-radius: 3px; 
+    padding: 8px 20px; 
+    font-weight: bold;
+}
+
+.container .fare .map .image1 img{
+    height: auto;
+    width: 300px;
+    padding: 10px 10px;
+}
+
+.container .fare .map .image2{
+    display: none;
+}
+
+.container .fare .map{
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-top: 50px;
+}
+
+.container .final{
+    grid-area: final;
+    display: grid;
+    grid-template-columns: 50% repeat(2,auto);
+    grid-template-rows: repeat(3,auto);
+    background: #2b2b2b;
+    font-family: 'Gothic A1', sans-serif;
+    color: white;
+}
+
+.container .final .final-logo{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    border-bottom-style: solid;
+    border-width: 1px;
+    border-color: whitesmoke;
+}
+
+.container .final .final-logo img{
+    padding:10px 10px 20px 10px;
+}
+
+.container .final .menu{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.container .final .menu li{
+    padding: 10px;
+    font-size: 10pt;
+}
+
+.container .final .icons{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.container .final .icons img{
+    width: 150px;
+    height: auto;
+    padding: 15px 10px 10px 10px;
+}
+
+.container .final .footer{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    font-size: 9pt;
+    padding: 10px;
+    border-top-style: solid;
+    border-width: 1px;
+    border-color: whitesmoke;
+}
+
+@media screen and (max-width: 778px){
+    .container .nav-bar .menu-desktop{
+        display: none;
+    }
+
+    .container .app-ad .ad-yellow .yellow-desktop{
+        display: none;
+    }
+
+    .container .cel .image-cel .cel-desktop{
+        display: none;
+    }
+
+    .container .final .menu2{
+        display: none;
+    }
+}
+
+
+@media screen and (min-width: 778px){
+    .container .nav-bar select{
+        display: none;
+    }
+
+    .container .app-ad .ad-yellow .yellow-mobile{
+        display: none;
+    }
+
+    .container .cel .footer-cel{
+        display:none;
+    }
+
+    .container .nav-bar .menu-desktop ul{
+        display: block;
+    }
+
+    .container .app-ad .ad-yellow .yellow-desktop{
+        display: block;
+    }
+
+
+
+    .container .app-ad{
+        grid-area: app-ad;
+        background: url("https://raw.githubusercontent.com/MontseRV/MEX008-labcar/rama-uno/images/taxi.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+        height: 900px;
+        width: auto;
+    }
+
+    .container .app-ad .ad-yellow{
+        grid-column-start: 6;
+        grid-column-end: 7;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        margin:0;
+        padding:0;
+    }
+
+    .container .app-ad .ad-yellow .yellow-desktop{
+        padding: 20px;
+        font-weight: normal;
+    }
+
+    .container .app-ad .ad-yellow .yellow-desktop p{
+        padding: 5px;
+    }
+
+    .container .cel{
+        /* display:grid;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: 100%; */
+    }
+
+    .container .cel .image-cel{
+        display:grid;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: 100%;
+        /* padding: 40px 10px 40px 40px; */
+        margin: 30px 200px 10px 0px;
+    }
+
+    .container .cel .image-cel .uno{
+        display:none;
+    }
+
+    .container .cel .image-cel .header-cel img{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        height: 300px;
+        width: auto;
+        margin: 30px 100px 30px 60px;
+    }
+
+    .container .cel .image-cel .cel-desktop{
+        font-size: 16pt;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        margin: 20px 0px 30px 60px;
+    }
+
+    .container .driver{
+        grid-area: driver;
+        background: url("https://raw.githubusercontent.com/MontseRV/MEX008-labcar/rama-uno/images/conduce.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 550px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 33% 26% 40%;
+        grid-template-areas: "uno dos tres"
+    }
+    
+    .container .driver .driver-ad{
+        font-size: 14pt;
+        color: white;
+        font-family: 'Gothic A1', sans-serif;
+        margin: 0px 0px;
+        padding: 120px 40px 40px 40px;
+        grid-area: tres;
+        background-color: rgba(0, 0, 0, 0.5)
+    }
+
+    .container .fare{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: "tarifa mapa"
+    }
+
+    .container .fare .first-part{
+        grid-area: tarifa;
+        padding: 80px;
+        font-size: 16pt;
+    }
+
+    .container .fare .map .image1{
+        display:none;
+    }
+    
+
+    .container .fare .map{
+        grid-area: mapa;
+    }
+
+    .container .fare .map .image2{
+        display: block;
+    }
+
+    .container .fare .map .image2 img{
+        height: 500px;
+        width: auto;
+        padding: 10px 10px;
+    }
+
+    .container .final{
+        display:grid;
+        grid-template-columns: 3;
+        grid-template-rows: 3;
+    }
+
+    .container .final .final-logo{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        border-bottom-style: solid;
+        border-width: 1px;
+        border-color: whitesmoke;
+    }
+
+    .container .final .final-logo img{
+        padding:80px 10px 20px 30px;
+    }
+
+    .container .final .menu{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        padding: 30px 10px 30px 400px;
+    }
+    
+    .container .final .menu li{
+        padding: 10px;
+        font-size: 10pt;
+        list-style: none;
+    }
+
+    .container .final .menu2{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        padding: 30px 30px 30px 10px;
+    }
+    
+    .container .final .menu2 li{
+        padding: 10px;
+        font-size: 10pt;
+        list-style: none;
+    }
+
+    .container .final .icons{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    
+    .container .final .icons img{
+        width: 170px;
+        height: auto;
+        padding: 15px 10px 10px 10px;
+    }
+
+    .container .final .footer{
+        padding: 20px 20px 100px 30px;
+    }
+}
